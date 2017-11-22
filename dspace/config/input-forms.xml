@@ -136,6 +136,8 @@
         <name-map collection-handle="1/964" form-name="dissertacao_tese "/>
         -->
         <name-map collection-handle="1/4" form-name="dissertacao_tese "/>
+        <name-map collection-handle="1/5" form-name="artigos"/>
+        <name-map collection-handle="default" form-name="traditional"/>
 
     </form-map>
 
@@ -1411,18 +1413,7 @@
                     <hint></hint>
                     <required></required>
                 </field>
-                <!-- 20 -->
-                <field>
-                    <dc-schema>dc</dc-schema>
-                    <dc-element>identifier</dc-element>
-                    <dc-qualifier>uri</dc-qualifier>
-                    <!-- An input-type of qualdrop_value MUST be marked as repeatable -->
-                    <repeatable>true</repeatable>
-                    <label>Identifiers</label>
-                    <input-type value-pairs-name="common_identifiers">qualdrop_value</input-type>
-                    <hint></hint>
-                    <required></required>
-                </field>
+
                 <!-- 21 -->
                 <field>
                     <dc-schema>dc</dc-schema>
