@@ -518,7 +518,7 @@
                     <dc-qualifier>sponsorship</dc-qualifier>
                     <repeatable>true</repeatable>
                     <label>Agência de Fomento</label>
-                    <input-type>onebox</input-type>
+                    <input-type value-pairs-name="agencias de fomento">dropdown</input-type>
                     <hint></hint>
                     <required></required>
                 </field>
@@ -874,9 +874,9 @@
                     <dc-element>identifier</dc-element>
                     <dc-qualifier>uri</dc-qualifier>
                     <!-- An input-type of qualdrop_value MUST be marked as repeatable -->
-                    <repeatable>true</repeatable>
+                    <repeatable>false</repeatable>
                     <label>Identifiers</label>
-                    <input-type value-pairs-name="common_identifiers">qualdrop_value</input-type>
+                    <input-type>onebox</input-type>
                     <hint>Link para o acesso ao trabalho em outros sistemas ou URL
                         alternativa para o acesso
                         ao trabalho no próprio repositório
@@ -890,9 +890,9 @@
                     <dc-element>identifier</dc-element>
                     <dc-qualifier>doi</dc-qualifier>
                     <!-- An input-type of qualdrop_value MUST be marked as repeatable -->
-                    <repeatable>true</repeatable>
+                    <repeatable>false</repeatable>
                     <label>Doi</label>
-                    <input-type value-pairs-name="common_identifiers">qualdrop_value</input-type>
+                    <input-type>onebox</input-type>
                     <hint>A URI de origem do trabalho</hint>
                     <required></required>
 
@@ -1167,7 +1167,7 @@
                     <dc-qualifier>sponsorship</dc-qualifier>
                     <repeatable>true</repeatable>
                     <label>Agência de Fomento</label>
-                    <input-type>onebox</input-type>
+                    <input-type value-pairs-name="agencias de fomento">qualdrop_value</input-type>
                     <hint></hint>
                     <required></required>
                 </field>
@@ -1397,7 +1397,7 @@
                     <dc-qualifier>sponsorship</dc-qualifier>
                     <repeatable>true</repeatable>
                     <label>Agência Financiadora</label>
-                    <input-type>onebox</input-type>
+                    <input-type value-pairs-name="agencias de fomento">qualdrop_value</input-type>
                     <hint></hint>
                     <required></required>
                 </field>
@@ -1590,7 +1590,7 @@
         <!-- default language order: (from dspace 1.2.1) "en_US", "en", "es", "de",
             "fr", "it", "ja", "zh", "other", "" -->
         <value-pairs value-pairs-name="common_iso_languages"
-                     dc-term="language_iso">
+                     dc-term="language">
             <pair>
                 <displayed-value>N/A</displayed-value>
                 <stored-value></stored-value>
@@ -1634,7 +1634,7 @@
             </pair>
         </value-pairs>
 
-        <value-pairs value-pairs-name="licence_types" dc-term="type">
+        <value-pairs value-pairs-name="licence_types" dc-term="rights">
             <pair>
                 <displayed-value>openAcces</displayed-value>
                 <stored-value>openAcces</stored-value>
@@ -1662,6 +1662,219 @@
                 <displayed-value>Tese</displayed-value>
                 <stored-value>doctoralThesis</stored-value>
             </pair>
+        </value-pairs>
+
+        <value-pairs value-pairs-name="agencias de fomento"
+                     dc-term="description">
+            <pair>
+                <displayed-value>N/A</displayed-value>
+                <stored-value></stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Banco do Nordeste do Brasil (BNB)</displayed-value>
+                <stored-value>banco-nordeste-brasil</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Conselho Nacional de Desenvolvimento Científico e Tecnológico (CNPq)</displayed-value>
+                <stored-value>cnpq</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Coordenação de Aperfeiçoamento de Pessoal de Nível Superior (CAPES)</displayed-value>
+                <stored-value>capes</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Empresa de Pesquisa Agropecuária de Minas Gerais (EPAMIG)</displayed-value>
+                <stored-value>epamig</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Fundação de Amparo à Pesquisa do estado de Minas Gerais (FAPEMIG)</displayed-value>
+                <stored-value>fapemig</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Fundação Diamantinense de Apoio ao Ensino, Pesquisa e Extensão (FUNDAEPE)</displayed-value>
+                <stored-value>fundaepe</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Rede Mineira de Pesquisas em Nanobiotecnologia (Nanobiomg)</displayed-value>
+                <stored-value>nanobiomig</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Agência de Desenvolvimento Paulista (Desenvolve SP)</displayed-value>
+                <stored-value>desenvolvesp</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Agência de Fomento de Alagoas (Desenvolve)</displayed-value>
+                <stored-value>desenvolve</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Agência de Fomento do Amapá S.A. (Afap)</displayed-value>
+                <stored-value>afap</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Agência de Fomento do Estado da Bahia S.A. (Desenbahia)</displayed-value>
+                <stored-value>desenbahia</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Agência de Fomento do Estado de Goiás S.A.	(Goiás Fomento)</displayed-value>
+                <stored-value>goias-fomento</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Agência de Fomento do Estado de Mato Grosso S.A. (MT Fomento)</displayed-value>
+                <stored-value>mt-fomento</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Agência de Fomento do Estado de Pernambuco S.A. (Agefepe)</displayed-value>
+                <stored-value>agefepe</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Agência de Fomento do Estado de Roraima S.A. (Aferr)</displayed-value>
+                <stored-value>aferr</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Agência de Fomento do Estado de Santa Catarina S.A. (Badesc)</displayed-value>
+                <stored-value>badesc</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Agência de Fomento do Estado do Amazonas S.A. (Afeam)</displayed-value>
+                <stored-value>afeam</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Agência de Fomento do Estado do Paraná S.A. (Fomento Paraná)</displayed-value>
+                <stored-value>fomento-parana</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Agência de Fomento do Estado do Tocantins S.A. (FomenTO)</displayed-value>
+                <stored-value>fomento</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Agência de Fomento do Piauí S.A. (Piauí Fomento)</displayed-value>
+                <stored-value>piauifomento</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Agência de Fomento do Rio Grande do Norte S.A. (AGN)</displayed-value>
+                <stored-value>agn</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Agência Estadual de Fomento (AgeRio)</displayed-value>
+                <stored-value>agerio</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Badesul Desenvolvimento S.A. – Agência de Fomento/RS (Badesul)</displayed-value>
+                <stored-value>badesul</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Conselho Nacional das Fundações Estaduais de Amparo à Pesquisa (CONFAP)</displayed-value>
+                <stored-value>confap</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Financiadora de Estudos e Projetos (FINEP)</displayed-value>
+                <stored-value>finep</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Fundação Araucária de Apoio ao Desenvolvimento Científico e Tecnológico do Paraná (FUND ARAUCÁRIA)</displayed-value>
+                <stored-value>fund-araucaria</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Fundação Carlos Chagas Filho de Amparo à Pesquisa do Estado do Rio de Janeiro (FAPERJ)</displayed-value>
+                <stored-value>faperj</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Fundação Cearense de Apoio ao Desenvolvimento Científico e Tecnológico (FUNCAP)</displayed-value>
+                <stored-value>funcap</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Fundação de Amparo à Ciência e Tecnologia do Estado de Pernambuco (FACEPE)</displayed-value>
+                <stored-value>facepe</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Fundação de Amparo à Pesquisa do Estado da Bahia (FAPESB)</displayed-value>
+                <stored-value>fapesb</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Fundação de Amparo à Pesquisa do Estado de Alagoas (FAPEAL)</displayed-value>
+                <stored-value>fapeal</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Fundação de Amparo à Pesquisa do Estado de Goiás (FAPEG)</displayed-value>
+                <stored-value>fapeg</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Fundação de Amparo à Pesquisa do Estado de Mato Grosso (FAPEMAT)</displayed-value>
+                <stored-value>fapemat</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Fundação de Amparo à Pesquisa do Estado de São Paulo (FAPESP)</displayed-value>
+                <stored-value>fapesp</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Fundação de Amparo à Pesquisa do Estado do Amazonas (FAPEAM)</displayed-value>
+                <stored-value>fapeam</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Fundação de Amparo à Pesquisa do Estado do Pará (FAPESPA)</displayed-value>
+                <stored-value>fapespa</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Fundação de Amparo à Pesquisa do Estado do Piauí (FAPEPI)</displayed-value>
+                <stored-value>fapepi</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Fundação de Amparo à Pesquisa do Estado do Rio Grande do Sul (FAPERGS)</displayed-value>
+                <stored-value>fapergs</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Fundação de Amparo à Pesquisa do Estado do Tocantins (FAPT)</displayed-value>
+                <stored-value>fapt</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Fundação de Amparo à Pesquisa e ao Desenvolvimento Científico e Tecnológico do Maranhão (FAPEMA)</displayed-value>
+                <stored-value>fapema</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Fundação de Amparo à Pesquisa e Inovação do Estado de Santa Catarina (FAPESC)</displayed-value>
+                <stored-value>fapesc</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Fundação de Apoio a Pesquisa Científica, Educacional e Tecnológica de Rondônia (IPRO)</displayed-value>
+                <stored-value>ipro</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Fundação de Apoio à Pesquisa do Distrito Federal (FAP)</displayed-value>
+                <stored-value>fap</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Fundação de Apoio à Pesquisa do Estado da Paraíba (FAPESQ)</displayed-value>
+                <stored-value>fapesq</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Fundação de Apoio à Pesquisa e à Inovação Tecnológica do Estado de Sergipe (FAPITEC)</displayed-value>
+                <stored-value>fapitec</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Fundação de Apoio ao Desenvolvimento do Ensino, Ciência e Tecnologia do Estado de Mato Grosso do Sul (FUNDECT )</displayed-value>
+                <stored-value>fundect</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Fundação de Apoio ao Ensino, Pesquisa e Extensão (FAEPE)</displayed-value>
+                <stored-value>faepe</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Fundação de Tecnologia do Estado do Acre (FUNTAC)</displayed-value>
+                <stored-value>funtac</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Fundação Norte-Rio-Grandense de Pesquisa e Cultura (FUNPEC)</displayed-value>
+                <stored-value>funpec</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Instituto Nacional de Ciência e Tecnologia de Ciência Animal (INCT-CA)</displayed-value>
+                <stored-value>inctca</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Instituto Nacional de Estudos e Pesquisas Educacionais (INEP)</displayed-value>
+                <stored-value>inep</stored-value>
+            </pair>
+
         </value-pairs>
 
 
