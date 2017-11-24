@@ -133,10 +133,11 @@
         <name-map collection-handle="1/238" form-name="dissertacao_tese"/>
         <name-map collection-handle="1/244" form-name="dissertacao_tese"/>
         <name-map collection-handle="1/250" form-name="dissertacao_tese"/>
-        <name-map collection-handle="1/964" form-name="dissertacao_tese "/>
-        -->
+        <name-map collection-handle="1/964" form-name="dissertacao_tese "/>-->
+        <!-- Para Teste -->
         <name-map collection-handle="1/4" form-name="dissertacao_tese "/>
         <name-map collection-handle="1/5" form-name="artigos"/>
+        <name-map collection-handle="1/9" form-name="livro_caput"/>
         <name-map collection-handle="default" form-name="traditional"/>
 
     </form-map>
@@ -535,18 +536,6 @@
                 </field>
 
                 <!-- 14 -->
-                <field>
-                    <dc-schema>dc</dc-schema>
-                    <dc-element>format</dc-element>
-                    <dc-qualifier>extent</dc-qualifier>
-                    <repeatable>false</repeatable>
-                    <label>Descrição Física</label>
-                    <input-type>textarea</input-type>
-                    <hint></hint>
-                    <required></required>
-                </field>
-
-                <!-- 16 -->
 
                 <field>
                     <dc-schema>dc</dc-schema>
@@ -820,18 +809,6 @@
                     <required></required>
                 </field>
 
-                <!-- 14 -->
-                <field>
-                    <dc-schema>dc</dc-schema>
-                    <dc-element>format</dc-element>
-                    <dc-qualifier>extent</dc-qualifier>
-                    <repeatable>false</repeatable>
-                    <label>Descrição Física</label>
-                    <input-type>textarea</input-type>
-                    <hint></hint>
-                    <required></required>
-                </field>
-
                 <!-- 15 -->
                 <field>
                     <dc-schema>dc</dc-schema>
@@ -1008,7 +985,7 @@
                     <dc-element>contributor</dc-element>
                     <dc-qualifier>other</dc-qualifier>
                     <repeatable>true</repeatable>
-                    <label>Outros Editores</label>
+                    <label>Outras indicações de responsabilidades</label>
                     <input-type>name</input-type>
                     <hint>&lt;font color="red"&gt;Demais indicações de responsabilidade &lt;/font&gt;</hint>
                     <required></required>
@@ -1055,7 +1032,7 @@
                     <dc-element>relation</dc-element>
                     <dc-qualifier>ispartofseries</dc-qualifier>
                     <repeatable>false</repeatable>
-                    <label>Coleção/Série</label>
+                    <label>Número de série e ou coleção</label>
                     <input-type>series</input-type>
                     <hint></hint>
                     <required></required>
@@ -1113,18 +1090,7 @@
                     <hint>&lt;font color="red"&gt;O idioma do livro &lt;/font&gt;</hint>
                     <required></required>
                 </field>
-                <!-- 17 -->
-                <field>
-                    <dc-schema>dc</dc-schema>
-                    <dc-element>format</dc-element>
-                    <dc-qualifier>extent</dc-qualifier>
-                    <repeatable>false</repeatable>
-                    <label>Descrição Física</label>
-                    <input-type>textarea</input-type>
-                    <hint></hint>
-                    <required></required>
-                </field>
-                -
+
                 <!-- 18 -->
                 <field>
                     <dc-schema>dc</dc-schema>
@@ -1172,21 +1138,6 @@
                     <required></required>
                 </field>
 
-                <!-- 22 -->
-                <field>
-                    <dc-schema>dc</dc-schema>
-                    <dc-element>identifier</dc-element>
-                    <dc-qualifier>uri</dc-qualifier>
-                    <!-- An input-type of qualdrop_value MUST be marked as repeatable -->
-                    <repeatable>true</repeatable>
-                    <label>Identifiers</label>
-                    <input-type value-pairs-name="common_identifiers">qualdrop_value</input-type>
-                    <hint>&lt;font color="red"&gt;Link para o acesso ao livro em outros sistemas ou URL
-                        alternativa para o acesso
-                        ao livro no próprio repositório&lt;/font&gt;
-                    </hint>
-                    <required></required>
-                </field>
                 <!-- 24 -->
                 <field>
                     <dc-schema>dc</dc-schema>
@@ -1398,18 +1349,6 @@
                     <repeatable>true</repeatable>
                     <label>Agência Financiadora</label>
                     <input-type value-pairs-name="agencias de fomento">qualdrop_value</input-type>
-                    <hint></hint>
-                    <required></required>
-                </field>
-
-                <!-- 19 -->
-                <field>
-                    <dc-schema>dc</dc-schema>
-                    <dc-element>format</dc-element>
-                    <dc-qualifier>extent</dc-qualifier>
-                    <repeatable>false</repeatable>
-                    <label>Descrição Física</label>
-                    <input-type>textarea</input-type>
                     <hint></hint>
                     <required></required>
                 </field>
