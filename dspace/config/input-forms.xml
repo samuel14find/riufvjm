@@ -1609,6 +1609,12 @@
                 <displayed-value>N/A</displayed-value>
                 <stored-value></stored-value>
             </pair>
+
+            <pair>
+                <displayed-value>Universidade Federal dos Vales do Jequitinhonha e Mucuri (UFVJM)</displayed-value>
+                <stored-value>ufvjm</stored-value>
+            </pair>
+
             <pair>
                 <displayed-value>Banco do Nordeste do Brasil (BNB)</displayed-value>
                 <stored-value>banco-nordeste-brasil</stored-value>
