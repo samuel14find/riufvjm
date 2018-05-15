@@ -134,7 +134,8 @@
         <name-map collection-handle="1/244" form-name="dissertacao_tese"/>
         <name-map collection-handle="1/250" form-name="dissertacao_tese"/>
         <name-map collection-handle="1/964" form-name="dissertacao_tese "/>
-        <name-map collection-handle="1/1523" form-name="dissertacao_tese "/>-->
+        <name-map collection-handle="1/1523" form-name="dissertacao_tese "/>
+        <name-map collection-handle="1/1583" form-name="dissertacao_tese "/>-->
         <!-- Para Teste -->
         <name-map collection-handle="1/4" form-name="dissertacao_tese "/>
         <name-map collection-handle="1/5" form-name="artigos"/>
@@ -1637,7 +1638,8 @@
                 <stored-value>fapemig</stored-value>
             </pair>
             <pair>
-                <displayed-value>Fundação Diamantinense de Apoio ao Ensino, Pesquisa e Extensão (FUNDAEPE)</displayed-value>
+                <displayed-value>Fundação Diamantinense de Apoio ao Ensino, Pesquisa e Extensão (FUNDAEPE)
+                </displayed-value>
                 <stored-value>fundaepe</stored-value>
             </pair>
             <pair>
@@ -1661,7 +1663,7 @@
                 <stored-value>desenbahia</stored-value>
             </pair>
             <pair>
-                <displayed-value>Agência de Fomento do Estado de Goiás S.A.	(Goiás Fomento)</displayed-value>
+                <displayed-value>Agência de Fomento do Estado de Goiás S.A. (Goiás Fomento)</displayed-value>
                 <stored-value>goias-fomento</stored-value>
             </pair>
             <pair>
@@ -1709,7 +1711,8 @@
                 <stored-value>badesul</stored-value>
             </pair>
             <pair>
-                <displayed-value>Conselho Nacional das Fundações Estaduais de Amparo à Pesquisa (CONFAP)</displayed-value>
+                <displayed-value>Conselho Nacional das Fundações Estaduais de Amparo à Pesquisa (CONFAP)
+                </displayed-value>
                 <stored-value>confap</stored-value>
             </pair>
             <pair>
@@ -1717,19 +1720,25 @@
                 <stored-value>finep</stored-value>
             </pair>
             <pair>
-                <displayed-value>Fundação Araucária de Apoio ao Desenvolvimento Científico e Tecnológico do Paraná (FUND ARAUCÁRIA)</displayed-value>
+                <displayed-value>Fundação Araucária de Apoio ao Desenvolvimento Científico e Tecnológico do Paraná (FUND
+                    ARAUCÁRIA)
+                </displayed-value>
                 <stored-value>fund-araucaria</stored-value>
             </pair>
             <pair>
-                <displayed-value>Fundação Carlos Chagas Filho de Amparo à Pesquisa do Estado do Rio de Janeiro (FAPERJ)</displayed-value>
+                <displayed-value>Fundação Carlos Chagas Filho de Amparo à Pesquisa do Estado do Rio de Janeiro
+                    (FAPERJ)
+                </displayed-value>
                 <stored-value>faperj</stored-value>
             </pair>
             <pair>
-                <displayed-value>Fundação Cearense de Apoio ao Desenvolvimento Científico e Tecnológico (FUNCAP)</displayed-value>
+                <displayed-value>Fundação Cearense de Apoio ao Desenvolvimento Científico e Tecnológico (FUNCAP)
+                </displayed-value>
                 <stored-value>funcap</stored-value>
             </pair>
             <pair>
-                <displayed-value>Fundação de Amparo à Ciência e Tecnologia do Estado de Pernambuco (FACEPE)</displayed-value>
+                <displayed-value>Fundação de Amparo à Ciência e Tecnologia do Estado de Pernambuco (FACEPE)
+                </displayed-value>
                 <stored-value>facepe</stored-value>
             </pair>
             <pair>
@@ -1765,7 +1774,8 @@
                 <stored-value>fapepi</stored-value>
             </pair>
             <pair>
-                <displayed-value>Fundação de Amparo à Pesquisa do Estado do Rio Grande do Sul (FAPERGS)</displayed-value>
+                <displayed-value>Fundação de Amparo à Pesquisa do Estado do Rio Grande do Sul (FAPERGS)
+                </displayed-value>
                 <stored-value>fapergs</stored-value>
             </pair>
             <pair>
@@ -1773,15 +1783,19 @@
                 <stored-value>fapt</stored-value>
             </pair>
             <pair>
-                <displayed-value>Fundação de Amparo à Pesquisa e ao Desenvolvimento Científico e Tecnológico do Maranhão (FAPEMA)</displayed-value>
+                <displayed-value>Fundação de Amparo à Pesquisa e ao Desenvolvimento Científico e Tecnológico do Maranhão
+                    (FAPEMA)
+                </displayed-value>
                 <stored-value>fapema</stored-value>
             </pair>
             <pair>
-                <displayed-value>Fundação de Amparo à Pesquisa e Inovação do Estado de Santa Catarina (FAPESC)</displayed-value>
+                <displayed-value>Fundação de Amparo à Pesquisa e Inovação do Estado de Santa Catarina (FAPESC)
+                </displayed-value>
                 <stored-value>fapesc</stored-value>
             </pair>
             <pair>
-                <displayed-value>Fundação de Apoio a Pesquisa Científica, Educacional e Tecnológica de Rondônia (IPRO)</displayed-value>
+                <displayed-value>Fundação de Apoio a Pesquisa Científica, Educacional e Tecnológica de Rondônia (IPRO)
+                </displayed-value>
                 <stored-value>ipro</stored-value>
             </pair>
             <pair>
@@ -1793,11 +1807,14 @@
                 <stored-value>fapesq</stored-value>
             </pair>
             <pair>
-                <displayed-value>Fundação de Apoio à Pesquisa e à Inovação Tecnológica do Estado de Sergipe (FAPITEC)</displayed-value>
+                <displayed-value>Fundação de Apoio à Pesquisa e à Inovação Tecnológica do Estado de Sergipe (FAPITEC)
+                </displayed-value>
                 <stored-value>fapitec</stored-value>
             </pair>
             <pair>
-                <displayed-value>Fundação de Apoio ao Desenvolvimento do Ensino, Ciência e Tecnologia do Estado de Mato Grosso do Sul (FUNDECT )</displayed-value>
+                <displayed-value>Fundação de Apoio ao Desenvolvimento do Ensino, Ciência e Tecnologia do Estado de Mato
+                    Grosso do Sul (FUNDECT )
+                </displayed-value>
                 <stored-value>fundect</stored-value>
             </pair>
             <pair>
@@ -1813,7 +1830,8 @@
                 <stored-value>funpec</stored-value>
             </pair>
             <pair>
-                <displayed-value>Instituto Nacional de Ciência e Tecnologia de Ciência Animal (INCT-CA)</displayed-value>
+                <displayed-value>Instituto Nacional de Ciência e Tecnologia de Ciência Animal (INCT-CA)
+                </displayed-value>
                 <stored-value>inctca</stored-value>
             </pair>
             <pair>
