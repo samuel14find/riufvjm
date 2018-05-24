@@ -135,11 +135,14 @@
         <name-map collection-handle="1/250" form-name="dissertacao_tese"/>
         <name-map collection-handle="1/964" form-name="dissertacao_tese "/>
         <name-map collection-handle="1/1523" form-name="dissertacao_tese "/>
-        <name-map collection-handle="1/1583" form-name="dissertacao_tese "/>-->
+        <name-map collection-handle="1/1583" form-name="dissertacao_tese "/>
+        <name-map collection-handle="1/1557" form-name="anais"/>
+        -->
         <!-- Para Teste -->
-        <name-map collection-handle="1/4" form-name="dissertacao_tese "/>
-        <name-map collection-handle="1/5" form-name="artigos"/>
-        <name-map collection-handle="1/9" form-name="livro_caput"/>
+        <name-map collection-handle="1/7" form-name="dissertacao_tese "/>
+        <name-map collection-handle="1/4" form-name="artigos"/>
+        <name-map collection-handle="1/6" form-name="livro_caput"/>
+        <name-map collection-handle="1/11" form-name="anais"/>
         <name-map collection-handle="default" form-name="traditional"/>
 
     </form-map>
@@ -523,7 +526,7 @@
                     <dc-schema>dc</dc-schema>
                     <dc-element>description</dc-element>
                     <dc-qualifier>sponsorship</dc-qualifier>
-                    <repeatable>false</repeatable>
+                    <repeatable>true</repeatable>
                     <label>Agência de Fomento</label>
                     <input-type value-pairs-name="agencias de fomento">dropdown</input-type>
                     <hint></hint>
