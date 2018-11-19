@@ -38,9 +38,11 @@
         <name-map collection-handle="1/964" submission-name="dissertacao_tese"/>
         <name-map collection-handle="1/1523" submission-name="dissertacao_tese"/>
         <name-map collection-handle="1/1583" submission-name="dissertacao_tese"/>
+        <name-map collection-handle="1/970" submission-name="dissertacao_tese"/>
+        <name-map collection-handle="1/993" form-name="dissertacao_tese "/>
         -->
         <name-map collection-handle="1/4" submission-name="dissertacao_tese"/>
-        <name-map collection-handle="default" submission-name="artigos_livros_trabalhos" />
+        <name-map collection-handle="default" submission-name="artigos_livros_trabalhos"/>
 
 
     </submission-map>
@@ -486,9 +488,7 @@
             </step>
 
 
-
         </submission-process>
-
 
 
     </submission-definitions>
