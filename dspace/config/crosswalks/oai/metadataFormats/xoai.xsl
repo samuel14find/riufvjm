@@ -11,10 +11,9 @@
 	Developed by DSpace @ Lyncode <dspace@lyncode.com> 
 
  -->
-<xsl:stylesheet 
-	xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
-	xmlns:doc="http://www.lyncode.com/xoai"
-	version="1.0">
+<xsl:stylesheet
+        xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
+        version="1.0">
 	<xsl:output omit-xml-declaration="yes" method="xml" indent="yes" />
 	
 	<!-- An identity transformation to show the internal XOAI generated XML -->

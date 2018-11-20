@@ -16,13 +16,12 @@
 
 <%@ page contentType="text/html;charset=UTF-8" %>
 
-<%@ page import="java.util.List"%>
-<%@ page import="java.util.Enumeration"%>
-<%@ page import="org.dspace.app.webui.util.JSPManager" %>
+<%@ page import="org.dspace.app.util.Util"%>
+<%@ page import="org.dspace.app.webui.util.JSPManager"%>
 <%@ page import="org.dspace.core.ConfigurationManager" %>
-<%@ page import="org.dspace.app.util.Util" %>
 <%@ page import="javax.servlet.jsp.jstl.core.*" %>
 <%@ page import="javax.servlet.jsp.jstl.fmt.*" %>
+<%@ page import="java.util.List" %>
 
 <%
     String title = (String) request.getAttribute("dspace.layout.title");

@@ -16,11 +16,11 @@
  
  <%@ taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt" %>
  <%@ page contentType="text/html;charset=UTF-8" %>
- <%@ page import="org.dspace.app.webui.servlet.SubmissionController" %>
  <%@ page import="org.dspace.app.util.SubmissionInfo" %>
+ <%@ page import="org.dspace.app.webui.servlet.SubmissionController" %>
  <%@ page import="org.dspace.app.webui.util.UIUtil" %>
- <%@ page import="org.dspace.core.Context" %>
  <%@ page import="org.dspace.content.InProgressSubmission" %>
+ <%@ page import="org.dspace.core.Context" %>
  <%@ page import="javax.servlet.jsp.jstl.fmt.LocaleSupport" %>
  
  <%

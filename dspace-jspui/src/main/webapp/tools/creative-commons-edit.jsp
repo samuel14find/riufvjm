@@ -20,9 +20,9 @@
 
 <%@page import="org.dspace.app.webui.servlet.admin.EditItemServlet"%>
 <%@ page import="org.dspace.content.Item" %>
-<%@ page import="org.dspace.license.CreativeCommons" %>
 <%@ page import="org.dspace.core.ConfigurationManager" %>
-<%@ page import="org.dspace.license.CCLicense"%>
+<%@ page import="org.dspace.license.CCLicense" %>
+<%@ page import="org.dspace.license.CreativeCommons"%>
 <%@ page import="java.util.Collection"%>
 
 <%@ taglib uri="http://www.dspace.org/dspace-tags.tld" prefix="dspace" %>

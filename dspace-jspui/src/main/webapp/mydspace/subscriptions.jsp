@@ -23,11 +23,11 @@
 
 <%@ taglib uri="http://www.dspace.org/dspace-tags.tld" prefix="dspace" %>
 
-<%@ page import="javax.servlet.jsp.jstl.fmt.LocaleSupport" %>
-
-<%@ page import="org.dspace.content.Community" %>
-<%@ page import="org.dspace.content.Collection" %>
 <%@ page import="org.dspace.app.util.CollectionDropDown" %>
+
+<%@ page import="org.dspace.content.Collection" %>
+<%@ page import="org.dspace.content.Community" %>
+<%@ page import="javax.servlet.jsp.jstl.fmt.LocaleSupport" %>
 
 <%
     Collection[] availableSubscriptions =

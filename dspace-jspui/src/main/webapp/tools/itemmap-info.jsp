@@ -21,13 +21,10 @@
 <%@ taglib uri="http://www.dspace.org/dspace-tags.tld" prefix="dspace" %>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt" %>
 
-<%@ page import="java.net.URLEncoder"            %>
-<%@ page import="java.util.Iterator"             %>
-<%@ page import="java.util.Map"                  %>
+<%@ page import="org.dspace.content.Collection"            %>
+<%@ page import="org.dspace.content.Item"             %>
+<%@ page import="org.dspace.core.ConfigurationManager"                  %>
 <%@ page import="java.util.LinkedList"           %>
-<%@ page import="org.dspace.content.Collection"  %>
-<%@ page import="org.dspace.content.Item"        %>
-<%@ page import="org.dspace.core.ConfigurationManager" %>
 
 <%
     Collection collection = (Collection)request.getAttribute("collection");

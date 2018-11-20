@@ -23,22 +23,22 @@
 
 <%@ taglib uri="http://www.dspace.org/dspace-tags.tld" prefix="dspace" %>
 
-<%@ page import="java.sql.SQLException" %>
-<%@ page import="java.util.Locale"%>
-
-<%@ page import="javax.servlet.jsp.jstl.core.*" %>
-<%@ page import="javax.servlet.jsp.jstl.fmt.*" %>
-
 <%@ page import="org.apache.log4j.Logger" %>
+<%@ page import="org.dspace.app.webui.util.JSPManager"%>
 
-<%@ page import="org.dspace.core.I18nUtil" %>
-<%@ page import="org.dspace.app.webui.util.JSPManager" %>
 <%@ page import="org.dspace.app.webui.util.UIUtil" %>
 <%@ page import="org.dspace.content.Community" %>
+
 <%@ page import="org.dspace.core.Context" %>
+
+<%@ page import="org.dspace.core.I18nUtil" %>
 <%@ page import="org.dspace.core.LogManager" %>
 <%@ page import="org.dspace.core.PluginManager" %>
 <%@ page import="org.dspace.plugin.SiteHomeProcessor" %>
+<%@ page import="javax.servlet.jsp.jstl.core.*" %>
+<%@ page import="javax.servlet.jsp.jstl.fmt.*" %>
+<%@ page import="java.sql.SQLException" %>
+<%@ page import="java.util.Locale" %>
 
 <%
     Context context = null;

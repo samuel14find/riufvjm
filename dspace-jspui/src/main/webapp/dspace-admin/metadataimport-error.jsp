@@ -7,8 +7,8 @@
     http://www.dspace.org/license/
 
 --%>
-<%@ page import="javax.servlet.jsp.jstl.fmt.LocaleSupport" %>
 <%@ page import="org.dspace.app.bulkedit.MetadataImportInvalidHeadingException" %>
+<%@ page import="javax.servlet.jsp.jstl.fmt.LocaleSupport" %>
 
 <%--
   - Form to show an error from the metadata importer

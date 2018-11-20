@@ -16,21 +16,13 @@
   -    discovery.searchScope - the search scope 
   --%>
 
-<%@page import="org.dspace.discovery.configuration.DiscoverySearchFilterFacet"%>
-<%@ page import="java.util.HashMap"%>
-<%@ page import="java.util.Set"%>
-<%@ page import="java.util.Map"%>
+<%@page import="org.apache.commons.lang.StringUtils"%>
 <%@ page import="org.dspace.discovery.DiscoverResult.FacetResult"%>
-<%@ page import="java.util.List"%>
-<%@ page import="java.net.URLEncoder"%>
-<%@ page import="org.apache.commons.lang.StringUtils"%>
 <%@ page import="org.dspace.discovery.configuration.DiscoverySearchFilterFacet"%>
 <%@ page import="org.dspace.discovery.configuration.TagCloudConfiguration"%>
 <%@ page import="java.util.HashMap"%>
-<%@ page import="java.util.Set"%>
-<%@ page import="java.util.Map"%>
 <%@ page import="java.util.List"%>
-<%@ page import="org.dspace.discovery.DiscoverResult.FacetResult"%>
+<%@ page import="java.util.Map"%>
 
 <%
 		Map<String, List<FacetResult>> tcMapFacetes = (Map<String, List<FacetResult>>) request.getAttribute("tagcloud.fresults");

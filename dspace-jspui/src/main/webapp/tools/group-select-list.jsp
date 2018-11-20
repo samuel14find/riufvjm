@@ -25,9 +25,9 @@
 
 <%@ taglib uri="http://www.dspace.org/dspace-tags.tld" prefix="dspace" %>
 
-<%@ page import="org.dspace.eperson.Group" %>
-
 <%@ page import="org.dspace.core.Utils" %>
+
+<%@ page import="org.dspace.eperson.Group" %>
 
 
 <%

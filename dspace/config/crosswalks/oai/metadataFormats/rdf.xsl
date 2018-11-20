@@ -17,11 +17,10 @@
 	<xsl:output omit-xml-declaration="yes" method="xml" indent="yes" />
 	
 	<xsl:template match="/">
-		<rdf:RDF xmlns:rdf="http://www.openarchives.org/OAI/2.0/rdf/"
-			xmlns:ow="http://www.ontoweb.org/ontology/1#" xmlns:dc="http://purl.org/dc/elements/1.1/"
-			xmlns:ds="http://dspace.org/ds/elements/1.1/"
-			xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-			xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/rdf/ http://www.openarchives.org/OAI/2.0/rdf.xsd">
+        <rdf:RDF xmlns:rdf="http://www.openarchives.org/OAI/2.0/rdf/"
+                 xmlns:ow="http://www.ontoweb.org/ontology/1#" xmlns:dc="http://purl.org/dc/elements/1.1/"
+                 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                 xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/rdf/ http://www.openarchives.org/OAI/2.0/rdf.xsd">
 			<ow:Publication>
 				<xsl:if test="doc:metadata/doc:element[@name='others']/doc:field[@name='identifier']">
 					<xsl:attribute name="rdf:about">

@@ -17,9 +17,9 @@
 
 <%@ taglib uri="http://www.dspace.org/dspace-tags.tld" prefix="dspace" %>
 
-<%@ page import="java.util.List"            %>
-<%@ page import="java.util.ArrayList"            %>
 <%@ page import="org.dspace.content.Collection"            %>
+<%@ page import="java.util.ArrayList"            %>
+<%@ page import="java.util.List"            %>
 
 <%
 

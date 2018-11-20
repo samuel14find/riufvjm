@@ -26,10 +26,10 @@
 
 <%@ taglib uri="http://www.dspace.org/dspace-tags.tld" prefix="dspace" %>
 
-<%@ page import="javax.servlet.jsp.jstl.fmt.LocaleSupport" %>
+<%@ page import="org.dspace.core.ConfigurationManager" %>
 
-<%@ page import="org.dspace.eperson.EPerson, org.dspace.core.ConfigurationManager" %>
-<%@ page import="org.dspace.core.Utils" %>
+<%@ page import="org.dspace.core.Utils, org.dspace.eperson.EPerson" %>
+<%@ page import="javax.servlet.jsp.jstl.fmt.LocaleSupport" %>
 
 <%
     EPerson eperson = (EPerson) request.getAttribute("eperson");

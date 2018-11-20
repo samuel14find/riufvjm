@@ -26,8 +26,8 @@
 
 <%@ taglib uri="http://www.dspace.org/dspace-tags.tld" prefix="dspace" %>
 
-<%@ page import="org.dspace.eperson.EPerson" %>
 <%@ page import="org.dspace.core.Utils" %>
+<%@ page import="org.dspace.eperson.EPerson" %>
 
 <%
     EPerson[] epeople =

@@ -20,16 +20,16 @@
   -    admin_button - Boolean, show admin 'Create Top-Level Community' button
   --%>
 
-<%@page import="org.dspace.content.Bitstream"%>
 <%@page import="org.apache.commons.lang.StringUtils"%>
+<%@page import="org.dspace.app.webui.servlet.admin.EditCommunitiesServlet"%>
 <%@ page contentType="text/html;charset=UTF-8" %>
 
 <%@ taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt" %>
 	
-<%@ page import="org.dspace.app.webui.servlet.admin.EditCommunitiesServlet" %>
 <%@ page import="org.dspace.app.webui.util.UIUtil" %>
 <%@ page import="org.dspace.browse.ItemCountException" %>
 <%@ page import="org.dspace.browse.ItemCounter" %>
+<%@ page import="org.dspace.content.Bitstream" %>
 <%@ page import="org.dspace.content.Collection" %>
 <%@ page import="org.dspace.content.Community" %>
 <%@ page import="org.dspace.core.ConfigurationManager" %>

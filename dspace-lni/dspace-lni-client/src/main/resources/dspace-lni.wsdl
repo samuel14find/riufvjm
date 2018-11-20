@@ -8,7 +8,9 @@
     http://www.dspace.org/license/
 
 -->
-<wsdl:definitions targetNamespace="http://dspace.org/xmlns/lni" xmlns:apachesoap="http://xml.apache.org/xml-soap" xmlns:impl="http://dspace.org/xmlns/lni" xmlns:intf="http://dspace.org/xmlns/lni" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:tns1="http://lang.java" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:wsdlsoap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+<wsdl:definitions targetNamespace="http://dspace.org/xmlns/lni" xmlns:impl="http://dspace.org/xmlns/lni"
+                  xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:wsdlsoap="http://schemas.xmlsoap.org/wsdl/soap/"
+                  xmlns:xsd="http://www.w3.org/2001/XMLSchema">
 <!--WSDL created by Apache Axis version: 1.3
 Built on Oct 05, 2005 (05:23:37 EDT)-->
  <wsdl:types>

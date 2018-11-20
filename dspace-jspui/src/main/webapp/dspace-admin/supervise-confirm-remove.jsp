@@ -23,12 +23,12 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/fmt"
     prefix="fmt" %>
 
-<%@ page import="org.dspace.content.Metadatum" %>
 <%@ page import="org.dspace.content.Item" %>
-<%@ page import="org.dspace.eperson.EPerson" %>
-<%@ page import="org.dspace.eperson.Group" %>
+<%@ page import="org.dspace.content.Metadatum" %>
 <%@ page import="org.dspace.content.WorkspaceItem" %>
 <%@ page import="org.dspace.core.Utils" %>
+<%@ page import="org.dspace.eperson.EPerson" %>
+<%@ page import="org.dspace.eperson.Group" %>
 
 <%
     // get item and group out of the request

@@ -18,19 +18,18 @@
     
 <%@ taglib uri="http://www.dspace.org/dspace-tags.tld" prefix="dspace" %>
 
-<%@ page import="javax.servlet.jsp.jstl.fmt.LocaleSupport" %>
-
-<%@ page import="java.util.List" %>
-<%@ page import="org.dspace.core.ConfigurationManager" %>
-<%@ page import="org.dspace.core.Context" %>
-<%@ page import="org.dspace.app.webui.servlet.SubmissionController" %>
-<%@ page import="org.dspace.authorize.ResourcePolicy" %>
-<%@ page import="org.dspace.submit.AbstractProcessingStep" %>
-<%@ page import="org.dspace.submit.step.UploadStep" %>
 <%@ page import="org.dspace.app.util.DCInputSet" %>
+
 <%@ page import="org.dspace.app.util.DCInputsReader" %>
 <%@ page import="org.dspace.app.util.SubmissionInfo" %>
+<%@ page import="org.dspace.app.webui.servlet.SubmissionController" %>
 <%@ page import="org.dspace.app.webui.util.UIUtil" %>
+<%@ page import="org.dspace.authorize.ResourcePolicy" %>
+<%@ page import="org.dspace.core.ConfigurationManager" %>
+<%@ page import="org.dspace.core.Context" %>
+<%@ page import="org.dspace.submit.AbstractProcessingStep" %>
+<%@ page import="org.dspace.submit.step.UploadStep" %>
+<%@ page import="javax.servlet.jsp.jstl.fmt.LocaleSupport" %>
 
 
 <%

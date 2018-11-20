@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <xsl:stylesheet
         xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
-                xmlns:dim="http://www.dspace.org/xmlns/dspace/dim"
-                xmlns:mods="http://www.loc.gov/mods/v3"
-                version="1.0">
+        xmlns:dim="http://www.dspace.org/xmlns/dspace/dim"
+        version="1.0">
 <!--
                 **************************************************
                 MODS-2-DIM  ("DSpace Intermediate Metadata" ~ Dublin Core variant)

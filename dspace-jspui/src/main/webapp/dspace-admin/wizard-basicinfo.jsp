@@ -22,10 +22,10 @@
 
 <%@ taglib uri="http://www.dspace.org/dspace-tags.tld" prefix="dspace" %>
 
-<%@ page import="javax.servlet.jsp.jstl.fmt.LocaleSupport" %>
-
 <%@ page import="org.dspace.app.webui.servlet.admin.CollectionWizardServlet" %>
+
 <%@ page import="org.dspace.content.Collection" %>
+<%@ page import="javax.servlet.jsp.jstl.fmt.LocaleSupport" %>
 
 <%  Collection collection = (Collection) request.getAttribute("collection"); %>
 

@@ -17,21 +17,21 @@
 
 <%@ page contentType="text/html;charset=UTF-8" %>
 
-<%@ page import="java.util.HashMap" %>
-<%@ page import="java.util.Set" %>
-<%@ page import="java.util.Iterator" %>
+<%@ page import="org.apache.log4j.Logger" %>
+<%@ page import="org.dspace.app.util.SubmissionConfig" %>
+<%@ page import="org.dspace.app.util.SubmissionInfo" %>
 
+<%@ page import="org.dspace.app.util.SubmissionStepConfig" %>
 <%@ page import="org.dspace.app.webui.servlet.SubmissionController" %>
 <%@ page import="org.dspace.app.webui.submit.JSPStepManager" %>
-<%@ page import="org.dspace.submit.AbstractProcessingStep" %>
 
-<%@ page import="org.dspace.core.Context" %>
 <%@ page import="org.dspace.app.webui.util.UIUtil" %>
-<%@ page import="org.dspace.app.util.SubmissionInfo" %>
-<%@ page import="org.dspace.app.util.SubmissionConfig" %>
-<%@ page import="org.dspace.app.util.SubmissionStepConfig" %>
+<%@ page import="org.dspace.core.Context" %>
+<%@ page import="org.dspace.submit.AbstractProcessingStep" %>
 <%@ page import="javax.servlet.jsp.jstl.fmt.LocaleSupport" %>
-<%@ page import="org.apache.log4j.Logger" %>
+<%@ page import="java.util.HashMap" %>
+<%@ page import="java.util.Iterator" %>
+<%@ page import="java.util.Set" %>
 
 <%@ taglib uri="http://www.dspace.org/dspace-tags.tld" prefix="dspace" %>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt" %>

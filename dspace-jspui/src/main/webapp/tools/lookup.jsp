@@ -21,13 +21,13 @@
 
 <%@ taglib uri="http://www.dspace.org/dspace-tags.tld" prefix="dspace" %>
 
-<%@ page import="javax.servlet.jsp.jstl.fmt.LocaleSupport" %>
-<%@ page import="javax.servlet.http.HttpServletRequest" %>
-<%@ page import="javax.servlet.jsp.tagext.TagSupport" %>
-<%@ page import="javax.servlet.jsp.PageContext" %>
-<%@ page import="javax.servlet.ServletException" %>
-
 <%@ page import="org.dspace.core.ConfigurationManager" %>
+<%@ page import="javax.servlet.ServletException" %>
+<%@ page import="javax.servlet.http.HttpServletRequest" %>
+<%@ page import="javax.servlet.jsp.PageContext" %>
+<%@ page import="javax.servlet.jsp.jstl.fmt.LocaleSupport" %>
+
+<%@ page import="javax.servlet.jsp.tagext.TagSupport" %>
 
 <%-- invoke "popup" style which elides all the header and footer stuff.
     --%>

@@ -16,15 +16,13 @@
   -    discovery.searchScope - the search scope 
   --%>
 
+<%@page import="org.apache.commons.lang.StringUtils"%>
 <%@page import="org.dspace.app.webui.util.UIUtil"%>
-<%@page import="org.dspace.discovery.configuration.DiscoverySearchFilterFacet"%>
-<%@ page import="java.util.HashMap"%>
-<%@ page import="java.util.Set"%>
-<%@ page import="java.util.Map"%>
 <%@ page import="org.dspace.discovery.DiscoverResult.FacetResult"%>
-<%@ page import="java.util.List"%>
+<%@ page import="org.dspace.discovery.configuration.DiscoverySearchFilterFacet"%>
 <%@ page import="java.net.URLEncoder"%>
-<%@ page import="org.apache.commons.lang.StringUtils"%>
+<%@ page import="java.util.List"%>
+<%@ page import="java.util.Map"%>
 
 <%
 

@@ -18,39 +18,31 @@
 
 <%@ page contentType="text/html;charset=UTF-8" %>
 
-<%@ page import="java.util.ArrayList" %>
-<%@ page import="java.util.HashMap" %>
-<%@ page import="java.util.Iterator" %>
-<%@ page import="java.util.List" %>
-<%@ page import="java.util.Map" %>
-<%@ page import="java.net.URLEncoder" %>
-
-<%@ page import="javax.servlet.jsp.jstl.fmt.LocaleSupport" %>
-<%@ page import="javax.servlet.jsp.tagext.TagSupport" %>
-<%@ page import="javax.servlet.jsp.PageContext" %>
-<%@ page import="javax.servlet.ServletException" %>
-
-<%@ page import="org.dspace.core.Context" %>
-<%@ page import="org.dspace.app.webui.jsptag.PopupTag" %>
 <%@ page import="org.dspace.app.util.DCInput" %>
 <%@ page import="org.dspace.app.util.DCInputSet" %>
-<%@ page import="org.dspace.app.webui.servlet.SubmissionController" %>
-<%@ page import="org.dspace.submit.AbstractProcessingStep" %>
-<%@ page import="org.dspace.core.I18nUtil" %>
-<%@ page import="org.dspace.app.webui.util.JSPManager" %>
 <%@ page import="org.dspace.app.util.SubmissionInfo" %>
+<%@ page import="org.dspace.app.webui.jsptag.PopupTag" %>
+<%@ page import="org.dspace.app.webui.servlet.SubmissionController" %>
+<%@ page import="org.dspace.app.webui.util.JSPManager" %>
+
 <%@ page import="org.dspace.app.webui.util.UIUtil" %>
-<%@ page import="org.dspace.content.DCDate" %>
-<%@ page import="org.dspace.content.DCLanguage" %>
-<%@ page import="org.dspace.content.DCPersonName" %>
-<%@ page import="org.dspace.content.DCSeriesNumber" %>
-<%@ page import="org.dspace.content.Metadatum" %>
-<%@ page import="org.dspace.content.Item" %>
-<%@ page import="org.dspace.content.authority.MetadataAuthorityManager" %>
+<%@ page import="org.dspace.content.*" %>
 <%@ page import="org.dspace.content.authority.ChoiceAuthorityManager" %>
 <%@ page import="org.dspace.content.authority.Choices" %>
+
+<%@ page import="org.dspace.content.authority.MetadataAuthorityManager" %>
 <%@ page import="org.dspace.core.ConfigurationManager" %>
+<%@ page import="org.dspace.core.Context" %>
+<%@ page import="org.dspace.core.I18nUtil" %>
 <%@ page import="org.dspace.core.Utils" %>
+<%@ page import="org.dspace.submit.AbstractProcessingStep" %>
+<%@ page import="javax.servlet.ServletException" %>
+<%@ page import="javax.servlet.jsp.PageContext" %>
+<%@ page import="javax.servlet.jsp.jstl.fmt.LocaleSupport" %>
+<%@ page import="javax.servlet.jsp.tagext.TagSupport" %>
+<%@ page import="java.util.ArrayList" %>
+<%@ page import="java.util.Iterator" %>
+<%@ page import="java.util.List" %>
 
 <%@ taglib uri="http://www.dspace.org/dspace-tags.tld" prefix="dspace" %>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt" %>

@@ -24,12 +24,12 @@
 
 <%@ taglib uri="http://www.dspace.org/dspace-tags.tld" prefix="dspace" %>
 
-<%@ page import="java.util.Locale"%>
+<%@ page import="org.dspace.app.webui.util.UIUtil"%>
 
 <%@ page import="org.dspace.core.I18nUtil" %>
-<%@ page import="org.dspace.app.webui.util.UIUtil" %>
-<%@ page import="org.dspace.eperson.EPerson" %>
 <%@ page import="org.dspace.core.Utils" %>
+<%@ page import="org.dspace.eperson.EPerson" %>
+<%@ page import="java.util.Locale" %>
 
 <%
     Locale[] supportedLocales = I18nUtil.getSupportedLocales();

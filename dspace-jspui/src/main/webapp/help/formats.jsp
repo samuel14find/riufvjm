@@ -25,17 +25,17 @@
 
 <%@ taglib uri="http://www.dspace.org/dspace-tags.tld" prefix="dspace" %>
 
-<%@ page import="java.sql.SQLException" %>
-
-<%@ page import="javax.servlet.jsp.jstl.fmt.LocaleSupport" %>
-
 <%@ page import="org.apache.log4j.Logger" %>
 
 <%@ page import="org.dspace.app.webui.util.JSPManager" %>
+
 <%@ page import="org.dspace.app.webui.util.UIUtil" %>
+
 <%@ page import="org.dspace.content.BitstreamFormat" %>
 <%@ page import="org.dspace.core.Context" %>
 <%@ page import="org.dspace.core.LogManager" %>
+<%@ page import="javax.servlet.jsp.jstl.fmt.LocaleSupport" %>
+<%@ page import="java.sql.SQLException" %>
 
 <%
     Context context = null;

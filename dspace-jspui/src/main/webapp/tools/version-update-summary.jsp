@@ -13,9 +13,9 @@
   - Attributes:
    --%>
 
-<%@page import="org.dspace.core.Context"%>
 <%@page import="org.dspace.app.webui.util.UIUtil"%>
 <%@page import="org.dspace.app.webui.util.VersionUtil"%>
+<%@page import="org.dspace.core.Context"%>
 <%@ page contentType="text/html;charset=UTF-8" %>
 
 <%@ taglib uri="http://java.sun.com/jsp/jstl/fmt"

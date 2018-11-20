@@ -14,11 +14,11 @@
    --%>
 
 <%@page import="org.dspace.app.webui.util.UIUtil"%>
-<%@page import="org.dspace.core.Context"%>
+<%@page import="org.dspace.app.webui.util.VersionUtil"%>
 <%@page import="org.dspace.content.Item"%>
+<%@page import="org.dspace.core.Context"%>
 <%@page import="org.dspace.eperson.EPerson"%>
 <%@page import="org.dspace.versioning.Version"%>
-<%@page import="org.dspace.app.webui.util.VersionUtil"%>
 <%@page import="org.dspace.versioning.VersionHistory"%>
 <%@ page contentType="text/html;charset=UTF-8" %>
 

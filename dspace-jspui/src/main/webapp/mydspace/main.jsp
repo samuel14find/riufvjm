@@ -27,22 +27,17 @@
 
 <%@ taglib uri="http://www.dspace.org/dspace-tags.tld" prefix="dspace" %>
 
-<%@ page  import="javax.servlet.jsp.jstl.fmt.LocaleSupport" %>
+<%@ page  import="org.dspace.app.itemimport.BatchUpload" %>
 
 <%@ page import="org.dspace.app.webui.servlet.MyDSpaceServlet" %>
-<%@ page import="org.dspace.content.Collection" %>
-<%@ page import="org.dspace.content.DCDate" %>
-<%@ page import="org.dspace.content.Metadatum" %>
-<%@ page import="org.dspace.content.Item" %>
-<%@ page import="org.dspace.content.SupervisedItem" %>
-<%@ page import="org.dspace.content.WorkspaceItem" %>
+<%@ page import="org.dspace.content.*" %>
 <%@ page import="org.dspace.core.Utils" %>
 <%@ page import="org.dspace.eperson.EPerson" %>
-<%@ page import="org.dspace.eperson.Group"   %>
+<%@ page import="org.dspace.eperson.Group" %>
 <%@ page import="org.dspace.workflow.WorkflowItem" %>
 <%@ page import="org.dspace.workflow.WorkflowManager" %>
+<%@ page import="javax.servlet.jsp.jstl.fmt.LocaleSupport" %>
 <%@ page import="java.util.List" %>
-<%@page import="org.dspace.app.itemimport.BatchUpload"%>
 
 <%
     EPerson user = (EPerson) request.getAttribute("mydspace.user");

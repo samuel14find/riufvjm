@@ -19,10 +19,9 @@
 	<xsl:output omit-xml-declaration="yes" method="xml" indent="yes" />
 	
 	<xsl:template match="/">
-		<record xmlns="http://www.loc.gov/MARC21/slim" 
-			xmlns:dcterms="http://purl.org/dc/terms/"
-			xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-			xsi:schemaLocation="http://www.loc.gov/MARC21/slim http://www.loc.gov/standards/marcxml/schema/MARC21slim.xsd">
+        <record xmlns="http://www.loc.gov/MARC21/slim"
+                xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                xsi:schemaLocation="http://www.loc.gov/MARC21/slim http://www.loc.gov/standards/marcxml/schema/MARC21slim.xsd">
 			<leader>00925njm 22002777a 4500</leader>
 			<datafield ind2=" " ind1=" " tag="042">
 				<subfield code="a">dc</subfield>

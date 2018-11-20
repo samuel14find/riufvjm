@@ -24,11 +24,11 @@
 
 <%@ taglib uri="http://www.dspace.org/dspace-tags.tld" prefix="dspace" %>
 
-<%@ page import="javax.servlet.jsp.jstl.fmt.LocaleSupport" %>
+<%@ page import="org.dspace.app.webui.util.UIUtil" %>
 
 <%@ page import="org.dspace.content.BitstreamFormat" %>
 <%@ page import="org.dspace.core.Context"%>
-<%@ page import="org.dspace.app.webui.util.UIUtil"%>
+<%@ page import="javax.servlet.jsp.jstl.fmt.LocaleSupport"%>
 
 
 

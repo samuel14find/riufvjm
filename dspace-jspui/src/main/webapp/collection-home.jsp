@@ -30,8 +30,8 @@
 
 <%@ page import="org.dspace.app.webui.components.RecentSubmissions" %>
 
+<%@ page import="org.dspace.app.webui.servlet.MyDSpaceServlet" %>
 <%@ page import="org.dspace.app.webui.servlet.admin.EditCommunitiesServlet" %>
-<%@ page import="org.dspace.app.webui.util.UIUtil" %>
 <%@ page import="org.dspace.browse.BrowseIndex" %>
 <%@ page import="org.dspace.browse.BrowseInfo" %>
 <%@ page import="org.dspace.browse.ItemCounter"%>
@@ -41,7 +41,6 @@
 <%@ page import="org.dspace.core.Utils" %>
 <%@ page import="org.dspace.eperson.Group"     %>
 <%@ page import="javax.servlet.jsp.jstl.fmt.LocaleSupport" %>
-<%@ page import="java.net.URLEncoder" %>
 
 <%
     // Retrieve attributes
@@ -103,7 +102,6 @@
     boolean show_items = showItems != null ? showItems.booleanValue() : false;
 %>
 
-<%@page import="org.dspace.app.webui.servlet.MyDSpaceServlet"%>
 <dspace:layout locbar="commLink" title="<%= name %>" feedData="<%= feedData %>">
     <div class="well">
     <div class="row"><div class="col-md-8"><h2><%= name %>

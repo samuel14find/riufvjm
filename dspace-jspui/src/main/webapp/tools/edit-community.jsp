@@ -17,14 +17,14 @@
 
 <%@ page contentType="text/html;charset=UTF-8" %>
 
-<%@ page import="javax.servlet.jsp.jstl.fmt.LocaleSupport" %>
-
 <%@ page import="org.dspace.app.webui.servlet.admin.EditCommunitiesServlet" %>
+
+<%@ page import="org.dspace.app.webui.util.UIUtil" %>
 <%@ page import="org.dspace.content.Bitstream" %>
 <%@ page import="org.dspace.content.Community" %>
-<%@ page import="org.dspace.eperson.Group" %>
-<%@ page import="org.dspace.app.webui.util.UIUtil" %>
 <%@ page import="org.dspace.core.Utils" %>
+<%@ page import="org.dspace.eperson.Group" %>
+<%@ page import="javax.servlet.jsp.jstl.fmt.LocaleSupport" %>
 
 <%@ taglib uri="http://www.dspace.org/dspace-tags.tld" prefix="dspace" %>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt" %>

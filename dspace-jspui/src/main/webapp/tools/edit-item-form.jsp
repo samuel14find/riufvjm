@@ -26,31 +26,23 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core"
     prefix="c" %>
 
-<%@ page import="java.util.Date" %>
-<%@ page import="java.util.HashMap" %>
-<%@ page import="java.util.Map" %>
-
-<%@ page import="javax.servlet.jsp.jstl.fmt.LocaleSupport" %>
-<%@ page import="javax.servlet.jsp.PageContext" %>
-
-<%@ page import="org.dspace.content.MetadataField" %>
+<%@ page import="org.apache.commons.lang.StringUtils" %>
 <%@ page import="org.dspace.app.webui.servlet.admin.AuthorizeAdminServlet" %>
 <%@ page import="org.dspace.app.webui.servlet.admin.EditItemServlet" %>
-<%@ page import="org.dspace.content.Bitstream" %>
-<%@ page import="org.dspace.content.BitstreamFormat" %>
-<%@ page import="org.dspace.content.Bundle" %>
-<%@ page import="org.dspace.content.Collection" %>
-<%@ page import="org.dspace.content.DCDate" %>
-<%@ page import="org.dspace.content.Metadatum" %>
-<%@ page import="org.dspace.content.Item" %>
-<%@ page import="org.dspace.core.ConfigurationManager" %>
-<%@ page import="org.dspace.eperson.EPerson" %>
-<%@ page import="org.dspace.core.Utils" %>
-<%@ page import="org.dspace.content.authority.MetadataAuthorityManager" %>
+
+<%@ page import="org.dspace.content.*" %>
 <%@ page import="org.dspace.content.authority.ChoiceAuthorityManager" %>
+
 <%@ page import="org.dspace.content.authority.Choices" %>
-<%@ page import="org.apache.commons.lang.StringUtils" %>
+<%@ page import="org.dspace.content.authority.MetadataAuthorityManager" %>
+<%@ page import="org.dspace.core.ConfigurationManager" %>
+<%@ page import="org.dspace.core.Utils" %>
+<%@ page import="org.dspace.eperson.EPerson" %>
+<%@ page import="javax.servlet.jsp.PageContext" %>
+<%@ page import="javax.servlet.jsp.jstl.fmt.LocaleSupport" %>
 <%@ page import="java.util.ArrayList" %>
+<%@ page import="java.util.HashMap" %>
+<%@ page import="java.util.Map" %>
 
 <%
     Item item = (Item) request.getAttribute("item");

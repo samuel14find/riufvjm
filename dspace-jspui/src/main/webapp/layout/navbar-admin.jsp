@@ -13,18 +13,16 @@
 
 <%@ page contentType="text/html;charset=UTF-8" %>
 
-<%@ page import="java.util.LinkedList" %>
-<%@ page import="java.util.List" %>
-
-<%@ page import="javax.servlet.jsp.jstl.fmt.LocaleSupport" %>
+<%@ page import="org.apache.commons.lang.StringUtils" %>
+<%@ page import="org.dspace.app.webui.util.UIUtil" %>
 
 <%@ page import="org.dspace.browse.BrowseInfo" %>
-<%@ page import="org.dspace.sort.SortOption" %>
-<%@ page import="org.dspace.app.webui.util.UIUtil" %>
-<%@ page import="org.dspace.eperson.EPerson" %>
-<%@page import="org.apache.commons.lang.StringUtils"%>
 
-<%@ taglib uri="http://www.dspace.org/dspace-tags.tld" prefix="dspace" %>
+<%@ page import="org.dspace.eperson.EPerson" %>
+<%@ page import="org.dspace.sort.SortOption" %>
+<%@ page import="javax.servlet.jsp.jstl.fmt.LocaleSupport" %>
+
+    <%@ taglib uri="http://www.dspace.org/dspace-tags.tld" prefix="dspace" %>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt" %>
 
 <%

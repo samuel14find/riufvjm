@@ -17,9 +17,9 @@
 <%@ page contentType="text/html;charset=UTF-8" %>
 <%@ page import="org.apache.commons.lang.StringEscapeUtils" %>
 <%@ page import="org.dspace.content.Community" %>
+<%@ page import="org.dspace.core.ConfigurationManager" %>
 <%@ page import="org.dspace.search.QueryResults" %>
 <%@ page import="java.util.ArrayList" %>
-<%@ page import="org.dspace.core.ConfigurationManager" %>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt" %>
 <%@ taglib uri="http://www.dspace.org/dspace-tags.tld" prefix="dspace" %>
 

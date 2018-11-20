@@ -24,9 +24,9 @@
 
 <%@ taglib uri="http://www.dspace.org/dspace-tags.tld" prefix="dspace" %>
 
-<%@ page import="javax.servlet.jsp.jstl.fmt.LocaleSupport" %>
-
 <%@ page import="org.dspace.core.Constants" %>
+
+<%@ page import="javax.servlet.jsp.jstl.fmt.LocaleSupport" %>
 
 
 <%

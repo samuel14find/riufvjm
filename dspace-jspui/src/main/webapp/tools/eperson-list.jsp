@@ -29,8 +29,8 @@
 <%@ taglib uri="http://www.dspace.org/dspace-tags.tld" prefix="dspace" %>
 
 <%@page import="org.apache.commons.lang.StringEscapeUtils"%>
-<%@ page import="org.dspace.eperson.EPerson" %>
 <%@ page import="org.dspace.core.Utils" %>
+<%@ page import="org.dspace.eperson.EPerson" %>
 
 <%
 	int PAGESIZE = 50;

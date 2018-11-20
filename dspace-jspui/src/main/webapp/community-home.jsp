@@ -26,8 +26,8 @@
 
 <%@ page import="org.dspace.app.webui.components.RecentSubmissions" %>
 
+<%@ page import="org.dspace.app.webui.servlet.MyDSpaceServlet" %>
 <%@ page import="org.dspace.app.webui.servlet.admin.EditCommunitiesServlet" %>
-<%@ page import="org.dspace.app.webui.util.UIUtil" %>
 <%@ page import="org.dspace.browse.BrowseIndex" %>
 <%@ page import="org.dspace.browse.ItemCounter" %>
 <%@ page import="org.dspace.content.*" %>
@@ -72,7 +72,6 @@
     ItemCounter ic = new ItemCounter(UIUtil.obtainContext(request));
 %>
 
-<%@page import="org.dspace.app.webui.servlet.MyDSpaceServlet"%>
 <dspace:layout locbar="commLink" title="<%= name %>" feedData="<%= feedData %>">
 <div class="well">
 <div class="row">

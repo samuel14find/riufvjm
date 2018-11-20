@@ -24,13 +24,13 @@
 
 <%@ taglib uri="http://www.dspace.org/dspace-tags.tld" prefix="dspace" %>
 
-<%@ page import="javax.servlet.jsp.jstl.fmt.LocaleSupport" %>
-
 <%@ page import="org.dspace.administer.DCType" %>
+
 <%@ page import="org.dspace.content.Collection" %>
 <%@ page import="org.dspace.core.Utils" %>
-<%@ page import="org.dspace.workflow.WorkflowManager" %>
 <%@ page import="org.dspace.workflow.WorkflowItem" %>
+<%@ page import="org.dspace.workflow.WorkflowManager" %>
+<%@ page import="javax.servlet.jsp.jstl.fmt.LocaleSupport" %>
 
 <%
     WorkflowItem[] workflows =

@@ -22,8 +22,8 @@
     prefix="fmt" %>
 
 <%@ page import="org.dspace.app.webui.servlet.admin.EditCommunitiesServlet" %>
-<%@ page import="org.dspace.content.Community" %>
 <%@ page import="org.dspace.content.Collection" %>
+<%@ page import="org.dspace.content.Community" %>
 
 <%@ taglib uri="http://www.dspace.org/dspace-tags.tld" prefix="dspace" %>
 

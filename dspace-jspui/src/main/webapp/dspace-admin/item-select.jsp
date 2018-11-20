@@ -22,9 +22,9 @@
 
 <%@ taglib uri="http://www.dspace.org/dspace-tags.tld" prefix="dspace" %>
 
-<%@ page import="javax.servlet.jsp.jstl.fmt.LocaleSupport" %>
-
 <%@ page import="org.dspace.core.ConfigurationManager" %>
+
+<%@ page import="javax.servlet.jsp.jstl.fmt.LocaleSupport" %>
 
 
 <dspace:layout style="submission" titlekey="jsp.dspace-admin.item-select.title"

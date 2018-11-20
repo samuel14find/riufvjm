@@ -17,15 +17,15 @@
 
 <%@ taglib uri="http://www.dspace.org/dspace-tags.tld" prefix="dspace" %>
 
+<%@ page import="org.dspace.app.webui.util.UIUtil" %>
+<%@ page import="org.dspace.browse.BrowseIndex" %>
 <%@ page import="org.dspace.browse.BrowseInfo" %>
-<%@ page import="org.dspace.sort.SortOption" %>
 <%@ page import="org.dspace.content.Collection" %>
 <%@ page import="org.dspace.content.Community" %>
-<%@ page import="org.dspace.browse.BrowseIndex" %>
-<%@ page import="org.dspace.core.ConfigurationManager" %>
-<%@ page import="java.net.URLEncoder" %>
 <%@ page import="org.dspace.content.DCDate" %>
-<%@ page import="org.dspace.app.webui.util.UIUtil" %>
+<%@ page import="org.dspace.core.ConfigurationManager" %>
+<%@ page import="org.dspace.sort.SortOption" %>
+<%@ page import="java.net.URLEncoder" %>
 
 <%
     request.setAttribute("LanguageSwitch", "hide");

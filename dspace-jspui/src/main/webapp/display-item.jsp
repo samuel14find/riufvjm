@@ -29,22 +29,22 @@
 
 <%@ taglib uri="http://www.dspace.org/dspace-tags.tld" prefix="dspace" %>
 
+<%@ page import="org.dspace.app.webui.servlet.MyDSpaceServlet" %>
+<%@ page import="org.dspace.app.webui.util.UIUtil" %>
+<%@ page import="org.dspace.app.webui.util.VersionUtil" %>
+<%@ page import="org.dspace.authorize.AuthorizeManager" %>
 <%@ page import="org.dspace.content.Collection" %>
-<%@ page import="org.dspace.content.Metadatum" %>
 <%@ page import="org.dspace.content.Item" %>
-<%@ page import="org.dspace.core.ConfigurationManager" %>
-<%@ page import="org.dspace.handle.HandleManager" %>
-<%@ page import="org.dspace.license.CreativeCommons" %>
-<%@page import="javax.servlet.jsp.jstl.fmt.LocaleSupport"%>
-<%@page import="org.dspace.versioning.Version"%>
-<%@page import="org.dspace.core.Context"%>
-<%@page import="org.dspace.app.webui.util.VersionUtil"%>
-<%@page import="org.dspace.app.webui.util.UIUtil"%>
-<%@page import="org.dspace.authorize.AuthorizeManager"%>
-<%@page import="java.util.List"%>
+<%@page import="org.dspace.content.Metadatum"%>
+<%@page import="org.dspace.core.ConfigurationManager"%>
 <%@page import="org.dspace.core.Constants"%>
+<%@page import="org.dspace.core.Context"%>
 <%@page import="org.dspace.eperson.EPerson"%>
+<%@page import="org.dspace.handle.HandleManager"%>
+<%@page import="org.dspace.license.CreativeCommons"%>
+<%@page import="org.dspace.versioning.Version"%>
 <%@page import="org.dspace.versioning.VersionHistory"%>
+<%@page import="javax.servlet.jsp.jstl.fmt.LocaleSupport"%>
 <%
     // Attributes
     Boolean displayAllBoolean = (Boolean) request.getAttribute("display.all");
@@ -104,7 +104,7 @@
     List<Version> historyVersions = (List<Version>)request.getAttribute("versioning.historyversions");
 %>
 
-<%@page import="org.dspace.app.webui.servlet.MyDSpaceServlet"%>
+<%@page import="java.util.List"%>
 <dspace:layout title="<%= title %>">
 <%
     if (handle != null)

@@ -14,20 +14,20 @@
 
 <%@ page contentType="text/html;charset=UTF-8" %>
 
-<%@ page import="java.util.Iterator" %>
-
-<%@ page import="javax.servlet.jsp.jstl.fmt.LocaleSupport" %>
-
-<%@ page import="java.sql.SQLException" %>
-
 <%@ page import="org.apache.log4j.Logger" %>
 
 <%@ page import="org.dspace.app.webui.util.JSPManager" %>
+
 <%@ page import="org.dspace.app.webui.util.UIUtil" %>
+
 <%@ page import="org.dspace.authenticate.AuthenticationManager" %>
+
 <%@ page import="org.dspace.authenticate.AuthenticationMethod" %>
 <%@ page import="org.dspace.core.Context" %>
 <%@ page import="org.dspace.core.LogManager" %>
+<%@ page import="javax.servlet.jsp.jstl.fmt.LocaleSupport" %>
+<%@ page import="java.sql.SQLException" %>
+<%@ page import="java.util.Iterator" %>
 
 <%@ taglib uri="http://java.sun.com/jsp/jstl/fmt"
     prefix="fmt" %>

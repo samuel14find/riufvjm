@@ -26,13 +26,12 @@
 <%@ taglib uri="http://www.dspace.org/dspace-tags.tld" prefix="dspace" %>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt" %>
 
-<%@ page import="java.net.URLEncoder"            %>
-<%@ page import="java.util.Iterator"             %>
-<%@ page import="java.util.Map"                  %>
+<%@ page import="org.dspace.content.Collection"            %>
+<%@ page import="org.dspace.content.Item"             %>
+<%@ page import="org.dspace.content.Metadatum"                  %>
 <%@ page import="javax.servlet.jsp.jstl.fmt.LocaleSupport" %>
-<%@ page import="org.dspace.content.Collection"  %>
-<%@ page import="org.dspace.content.Metadatum"    %>
-<%@ page import="org.dspace.content.Item"        %>
+<%@ page import="java.util.Iterator"  %>
+<%@ page import="java.util.Map"    %>
 
 <%
     Collection collection  = (Collection)request.getAttribute("collection");

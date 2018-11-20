@@ -14,10 +14,10 @@
 <%@ page contentType="text/html;charset=UTF-8" %>
 
 <%@ page import="org.dspace.app.bulkedit.BulkEditChange" %>
-<%@ page import="java.util.ArrayList" %>
+<%@ page import="org.dspace.content.Collection" %>
 <%@ page import="org.dspace.content.Item" %>
 <%@ page import="org.dspace.content.Metadatum" %>
-<%@ page import="org.dspace.content.Collection" %>
+<%@ page import="java.util.ArrayList" %>
 <%@ page import="java.util.List" %>
 
 <%@ taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt" %>

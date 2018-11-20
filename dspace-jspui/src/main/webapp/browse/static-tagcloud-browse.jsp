@@ -12,15 +12,15 @@
   -
   --%>
 
-<%@page import="org.dspace.content.DSpaceObject"%>
-<%@ page import="java.net.URLEncoder"%>
-<%@ page import="org.apache.commons.lang.StringUtils"%>
-<%@ page import="java.util.HashMap"%>
+<%@page import="org.apache.commons.lang.StringUtils"%>
+<%@ page import="org.dspace.browse.BrowseIndex"%>
+<%@ page import="org.dspace.browse.BrowseInfo"%>
+<%@ page import="org.dspace.content.DSpaceObject"%>
+<%@ page import="org.dspace.core.Utils"%>
+<%@ page import="org.dspace.discovery.configuration.TagCloudConfiguration" %>
+<%@ page import="java.net.URLEncoder" %>
+<%@ page import="java.util.HashMap" %>
 <%@ page import="java.util.Map"%>
-<%@ page import="org.dspace.browse.BrowseInfo" %>
-<%@ page import="org.dspace.browse.BrowseIndex" %>
-<%@ page import="org.dspace.core.Utils" %>
-<%@ page import="org.dspace.discovery.configuration.TagCloudConfiguration"%>
 
 <%
 		BrowseInfo bi2 = (BrowseInfo) request.getAttribute("browse.info");

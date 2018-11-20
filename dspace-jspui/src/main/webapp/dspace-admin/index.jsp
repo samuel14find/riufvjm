@@ -24,14 +24,14 @@
 	
 <%@ taglib uri="http://www.dspace.org/dspace-tags.tld" prefix="dspace" %>
 
-<%@ page import="java.sql.SQLException" %>
-
 <%@ page import="org.apache.log4j.Logger" %>
 
 <%@ page import="org.dspace.app.webui.util.JSPManager" %>
+
 <%@ page import="org.dspace.app.webui.util.UIUtil" %>
 <%@ page import="org.dspace.core.Context" %>
 <%@ page import="org.dspace.core.LogManager" %>
+<%@ page import="java.sql.SQLException" %>
 
 <%
     // Obtain a context so that the location bar can display log in status

@@ -42,19 +42,18 @@
 
 <%@ taglib uri="http://www.dspace.org/dspace-tags.tld" prefix="dspace" %>
 
-<%@ page import="java.util.Iterator" %>
-<%@ page import="java.util.List"     %>
-<%@ page import="java.util.Map"      %>
-
-<%@ page import="javax.servlet.jsp.jstl.fmt.LocaleSupport" %>
-
 <%@ page import="org.dspace.authorize.ResourcePolicy" %>
-<%@ page import="org.dspace.content.Item"             %>
-<%@ page import="org.dspace.content.Bundle"           %>
-<%@ page import="org.dspace.content.Bitstream"        %>
-<%@ page import="org.dspace.core.Constants"           %>
-<%@ page import="org.dspace.eperson.EPerson"          %>
-<%@ page import="org.dspace.eperson.Group"            %>
+<%@ page import="org.dspace.content.Bitstream"     %>
+<%@ page import="org.dspace.content.Bundle"      %>
+
+<%@ page import="org.dspace.content.Item" %>
+
+<%@ page import="org.dspace.core.Constants" %>
+<%@ page import="org.dspace.eperson.EPerson"             %>
+<%@ page import="org.dspace.eperson.Group"           %>
+<%@ page import="javax.servlet.jsp.jstl.fmt.LocaleSupport"        %>
+<%@ page import="java.util.List"           %>
+<%@ page import="java.util.Map"          %>
 
 
 <%

@@ -19,9 +19,9 @@
      Date: $Date$
  -->
 <deployment
- xmlns="http://xml.apache.org/axis/wsdd/"
- xmlns:java="http://xml.apache.org/axis/wsdd/providers/java"
- xmlns:ns1="http://xml.apache.org/axis/wsdd/">
+        xmlns="http://xml.apache.org/axis/wsdd/"
+        xmlns:java="http://xml.apache.org/axis/wsdd/providers/java"
+>
   <service name="LNI" provider="java:RPC">
    <parameter name="className" value="org.dspace.app.dav.LNISoapServlet" />
    <parameter name="allowedMethods" value="propfind proppatch lookup copy" />

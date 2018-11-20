@@ -20,7 +20,7 @@
   -   count_import      - how many items are 'virtual'
   --%>
   
-<%@page import="java.util.List"%>
+<%@page import="org.dspace.content.Collection"%>
 <%@ page contentType="text/html;charset=UTF-8" %>
 
 <%@ taglib uri="http://java.sun.com/jsp/jstl/fmt"
@@ -28,12 +28,11 @@
 
 <%@ taglib uri="http://www.dspace.org/dspace-tags.tld" prefix="dspace" %>
 
-<%@ page import="java.net.URLEncoder"            %>
-<%@ page import="java.util.Iterator"             %>
-<%@ page import="java.util.Map"                  %>
-<%@ page import="org.dspace.content.Collection"  %>
-<%@ page import="org.dspace.content.Item"        %>
-<%@ page import="org.dspace.core.ConfigurationManager" %>
+<%@ page import="org.dspace.content.Item"            %>
+<%@ page import="org.dspace.core.ConfigurationManager"             %>
+<%@ page import="java.util.Iterator"                  %>
+<%@ page import="java.util.List"  %>
+<%@ page import="java.util.Map"        %>
 
 <%
     Collection collection = (Collection)request.getAttribute("collection");

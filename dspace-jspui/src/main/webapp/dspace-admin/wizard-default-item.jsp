@@ -14,7 +14,7 @@
   -    collection - collection we're creating
   --%>
 
-<%@ page import="org.dspace.content.MetadataSchema" %>
+<%@ page import="org.dspace.app.webui.servlet.admin.CollectionWizardServlet" %>
 <%@ page import="org.dspace.app.webui.util.UIUtil" %>
 <%@ page contentType="text/html;charset=UTF-8" %>
 
@@ -23,11 +23,11 @@
 
 <%@ taglib uri="http://www.dspace.org/dspace-tags.tld" prefix="dspace" %>
 
-<%@ page import="javax.servlet.jsp.jstl.fmt.LocaleSupport" %>
-
-<%@ page import="org.dspace.app.webui.servlet.admin.CollectionWizardServlet" %>
 <%@ page import="org.dspace.content.Collection" %>
+
 <%@ page import="org.dspace.content.MetadataField" %>
+<%@ page import="org.dspace.content.MetadataSchema" %>
+<%@ page import="javax.servlet.jsp.jstl.fmt.LocaleSupport" %>
 
 <%  Collection collection = (Collection) request.getAttribute("collection");
     MetadataField[] dcTypes = (MetadataField[]) request.getAttribute("dctypes"); %>

@@ -19,15 +19,14 @@
 
 <%@ page contentType="text/html;charset=UTF-8" %>
 
-<%@ page import="javax.servlet.jsp.jstl.fmt.LocaleSupport" %>
-
 <%@ page import="org.dspace.content.Collection" %>
-<%@ page import="java.lang.Boolean" %>
+
+<%@ page import="javax.servlet.jsp.jstl.fmt.LocaleSupport" %>
 <%@ page import="java.util.List" %>
 <%@ page import="java.util.Map" %>
 
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core"
-    prefix="c" %>
+           prefix="c" %>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/fmt"
     prefix="fmt" %>
 	
