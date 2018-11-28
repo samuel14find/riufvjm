@@ -53,6 +53,7 @@
 	    <link rel="stylesheet" href="<%= request.getContextPath() %>/static/css/bootstrap/bootstrap.min.css" type="text/css" />
 	    <link rel="stylesheet" href="<%= request.getContextPath() %>/static/css/bootstrap/bootstrap-theme.min.css" type="text/css" />
 	    <link rel="stylesheet" href="<%= request.getContextPath() %>/static/css/bootstrap/dspace-theme.css" type="text/css" />
+
 <%
     if (!"NONE".equals(feedRef))
     {
@@ -77,13 +78,14 @@
 <%
         }
 %>
-        
+
 	<script type='text/javascript' src="<%= request.getContextPath() %>/static/js/jquery/jquery-1.10.2.min.js"></script>
 	<script type='text/javascript' src='<%= request.getContextPath() %>/static/js/jquery/jquery-ui-1.10.3.custom.min.js'></script>
 	<script type='text/javascript' src='<%= request.getContextPath() %>/static/js/bootstrap/bootstrap.min.js'></script>
 	<script type='text/javascript' src='<%= request.getContextPath() %>/static/js/holder.js'></script>
 	<script type="text/javascript" src="<%= request.getContextPath() %>/utils.js"></script>
     <script type="text/javascript" src="<%= request.getContextPath() %>/static/js/choice-support.js"> </script>
+    <script type="text/javascript" src="<%= request.getContextPath() %>/static/js/fontsize.js"> </script>
 
     <%--Gooogle Analytics recording.--%>
     <%
@@ -109,7 +111,7 @@
 		<%
 		    }
     %>
-    
+
 
 <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
 <!--[if lt IE 9]>
@@ -120,28 +122,28 @@
 
     <%-- HACK: leftmargin, topmargin: for non-CSS compliant Microsoft IE browser --%>
     <%-- HACK: marginwidth, marginheight: for non-CSS compliant Netscape browser --%>
-    <body class="undernavigation">
-<a class="sr-only" href="#content">Skip navigation</a>
-<header class="navbar navbar-inverse navbar-fixed-top">    
-    <%
-    if (!navbar.equals("off"))
-    {
-%>
+    <body id="ds-body" class="undernavigation" data-gr-c-s-loaded="true">
+        <a class="sr-only" href="#content">Skip navigation</a>
+        <header class="navbar navbar-inverse navbar-fixed-top">
+            <%
+            if (!navbar.equals("off"))
+            {
+            %>
             <div class="container">
                 <dspace:include page="<%= navbar %>" />
             </div>
-<%
-    }
-    else
-    {
+        <%
+            }
+            else
+            {
     	%>
-        <div class="container">
-            <dspace:include page="/layout/navbar-minimal.jsp" />
-        </div>
-<%    	
-    }
-%>
-</header>
+            <div class="container">
+                <dspace:include page="/layout/navbar-minimal.jsp" />
+            </div>
+        <%
+            }
+        %>
+    </header>
 
 <main id="content" role="main">
 
@@ -153,7 +155,7 @@
 %>
 <div class="container">
                 <dspace:include page="/layout/location-bar.jsp" />
-</div>                
+</div>
 <%
     }
 %>
@@ -164,4 +166,4 @@
 <% if (request.getAttribute("dspace.layout.sidebar") != null) { %>
 	<div class="row">
 		<div class="col-md-9">
-<% } %>		
+<% } %>
