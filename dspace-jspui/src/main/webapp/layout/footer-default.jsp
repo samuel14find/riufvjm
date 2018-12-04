@@ -60,5 +60,36 @@
 
             </div>
             </footer>
+        <script>
+        jQuery.noConflict();
+        jQuery(document).ready(function () {
+
+        jQuery('#community-tree').jstree({
+        "core": {
+        "themes": {
+        responsive: true,
+        variant: "large",
+        icons: false
+        }
+        },
+
+        "types": {
+        "max_depth": -2,
+        "max_children": -2
+
+        },
+
+        "core" : {
+        "check_callback" : false
+        },
+
+        "plugins": ["wholerow","dnd"]
+
+        }).on("select_node.jstree", function (e, data) {
+        document.location = data.instance.get_node(data.node, true).children('a').attr('href');
+        });
+
+        });
+        </script>
         </body>
         </html>

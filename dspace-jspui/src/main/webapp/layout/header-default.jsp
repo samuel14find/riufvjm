@@ -53,6 +53,7 @@
 	    <link rel="stylesheet" href="<%= request.getContextPath() %>/static/css/bootstrap/bootstrap.min.css" type="text/css" />
 	    <link rel="stylesheet" href="<%= request.getContextPath() %>/static/css/bootstrap/bootstrap-theme.min.css" type="text/css" />
 	    <link rel="stylesheet" href="<%= request.getContextPath() %>/static/css/bootstrap/dspace-theme.css" type="text/css" />
+        <link rel="stylesheet" href="<%= request.getContextPath() %>/static/dist/themes/default/style.min.css" type="text/css" />
 
 <%
     if (!"NONE".equals(feedRef))
@@ -86,6 +87,7 @@
 	<script type="text/javascript" src="<%= request.getContextPath() %>/utils.js"></script>
     <script type="text/javascript" src="<%= request.getContextPath() %>/static/js/choice-support.js"> </script>
     <script type="text/javascript" src="<%= request.getContextPath() %>/static/js/fontsize.js"> </script>
+    <script type="text/javascript" src="<%= request.getContextPath() %>/static/dist/jstree.min.js"> </script>
 
     <%--Gooogle Analytics recording.--%>
     <%
