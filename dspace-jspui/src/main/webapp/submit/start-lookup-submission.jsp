@@ -451,13 +451,14 @@
     <p class="submitFormWarn"><fmt:message key="jsp.submit.select-collection.none-authorized"/></p>
     <% } %>
     <br/>
-    <p><fmt:message key="jsp.general.goto"/><br/>
-        <a href="<%= request.getContextPath() %>"><fmt:message key="jsp.general.home"/></a><br/>
-        <a href="<%= request.getContextPath() %>/mydspace"><fmt:message key="jsp.general.mydspace"/></a>
-    </p>
-
-
-
+    <h3><fmt:message key="jsp.general.goto"/>:</h3><br/>
+    <div class="btn-group">
+        <button type="button" class="btn btn-primary" value="<fmt:message key="jsp.general.home"/>"
+                onclick="window.location.href='<%= request.getContextPath() %>'"><fmt:message key="jsp.general.home"/></button>
+        <button type="button" class="btn btn-primary" value="<fmt:message key="jsp.general.mydspace" />"
+                onclick="window.location.href='<%= request.getContextPath() %>/mydspace'"><fmt:message key="jsp.general.mydspace" /></button>
+    </div>
+    
     <script type="text/javascript"><!--
     var j = jQuery.noConflict();
     j("#tabs").tabs({
