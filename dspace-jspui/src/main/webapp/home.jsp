@@ -35,6 +35,10 @@
 <%@ page import="org.dspace.core.Utils" %>
 <%@ page import="javax.servlet.jsp.jstl.core.Config" %>
 <%@ page import="java.util.Locale" %>
+<%@ page import="org.dspace.services.ConfigurationService" %>
+<%@ page import="org.dspace.content.packager.PackageParameters" %>
+<%@ page import="org.dspace.core.ConfigurationManager" %>
+
 
 <%
     Community[] communities = (Community[]) request.getAttribute("communities");
@@ -114,6 +118,68 @@
 
 
             <%@ include file="discovery/static-sidebar-facet.jsp" %>
+        </div>
+
+        <div class="container">
+
+            <div class="panel panel-default" align="left">
+                <div class="panel-heading">
+                    <h1 title="<fmt:message key="jsp.home.com1"/>">
+                        <fmt:message key="jsp.home.com1"/>
+                    </h1>
+                </div>
+            </div>
+
+            <div id="portfolio">
+                <div class="row">
+                    <%
+                        if(communities != null && communities.length != 0){
+                    %>
+                        <%
+                            boolean showLogos = ConfigurationManager.getBooleanProperty("jspui.home-page.logos", true);
+                            for (Community com : communities) {
+                        %>
+                            <div class="col-sm-2 portfolio-item">
+
+                                <%
+                                    Bitstream logo = com.getLogo();
+                                    if (showLogos && logo != null) {
+                                %>
+                                    <a class="portfolio-link" href="<%= request.getContextPath() %>/handle/<%= com.getHandle() %>">
+                                    <div class="portfolio-hover" style="min-height:50px;">
+                                        <div class="portfolio-hover-content" title="<%= com.getName() %>" alt="<%= com.getName() %>">
+
+                                        </div>
+                                    </div>
+
+                                    <img alt="Logo" class="img-responsive" src="<%= request.getContextPath() %>/retrieve/<%= logo.getID() %>" />
+                                     </a>
+                                <div class="portfolio-caption">
+                                    <h3 class="list-group-item-heading" title="<%= com.getName() %>">
+                                        <a href="<%= request.getContextPath() %>/handle/<%= com.getHandle() %>"><%= com.getName() %></a>
+                                        <%
+                                            if (ConfigurationManager.getBooleanProperty("webui.strengths.show")) {
+                                        %>
+                                        <span class="badge pull-right" style="color:#000000 "><%= ic.getCount(com) %></span>
+                                        <%
+                                            }
+                                        %>
+                                    </h3>
+                                    <p></p>
+                                </div>
+                                <%
+                                    }
+                                %>
+                            </div>
+                        <%
+                            }
+                        %>
+
+                    <%
+                        }
+                    %>
+                </div>
+            </div>
         </div>
     </div>
 </dspace:layout>
