@@ -335,7 +335,7 @@
                                 <label for="select-collection-manual"><fmt:message key="jsp.submit.start-lookup-submission.select.collection.label"/></label>
                                </div>--%>
                         <div class="col-md-9">
-                            <dspace:selectcollection klass="form-control" id="select-collection-manual  "
+                            <dspace:selectcollection klass="form-control" id="select-collection-manual"
                                                      collection="<%= collection_id %>"/>
                         </div>
 
@@ -347,8 +347,7 @@
                         <input type="hidden" id="collectionid" name="collectionid" value=""/>
                         <div class="btn-group">
                             <button class="btn btn-success col-md-offset-1" id="manual-submission-button" type="button">
-                                <fmt:message
-                                        key="jsp.submit.start-lookup-submission.button.manual-submission"/></button>
+                                <fmt:message key="jsp.submit.start-lookup-submission.button.manual-submission"/></button>
                         </div>
                     </form>
                 </div>
