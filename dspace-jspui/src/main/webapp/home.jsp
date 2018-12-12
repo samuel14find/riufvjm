@@ -112,14 +112,6 @@
 
         </form>
 
-        <div class="container row">
-
-            <% request.setAttribute("createRootDiv", false); %>
-
-
-            <%@ include file="discovery/static-sidebar-facet.jsp" %>
-        </div>
-
         <div class="container">
 
             <div id="portfolio">
@@ -175,6 +167,15 @@
                     %>
                 </div>
             </div>
+
+            <div class="container row">
+
+                <% request.setAttribute("createRootDiv", false); %>
+
+
+                <%@ include file="discovery/static-sidebar-facet.jsp" %>
+            </div>
+            
         </div>
     </div>
 </dspace:layout>
