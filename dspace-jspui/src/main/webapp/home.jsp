@@ -122,15 +122,10 @@
 
         <div class="container">
 
-            <div class="panel panel-default" align="left">
-                <div class="panel-heading">
-                    <h1 title="<fmt:message key="jsp.home.com1"/>">
-                        <fmt:message key="jsp.home.com1"/>
-                    </h1>
-                </div>
-            </div>
-
             <div id="portfolio">
+                <h1 title="<fmt:message key="jsp.home.com1"/>">
+                    <span class="glyphicon glyphicon-book"></span> <fmt:message key="jsp.home.com1"/>
+                </h1>
                 <div class="row">
                     <%
                         if(communities != null && communities.length != 0){
