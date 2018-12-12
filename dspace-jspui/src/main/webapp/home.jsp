@@ -112,6 +112,22 @@
 
         </form>
 
+        <div class="form form-horizontal col-md-12 form-group form-group-lg">
+            <p style="text-align: justify;">
+                É um conjunto de serviços oferecidos pela Biblioteca Central para a gestão e
+                disseminação da produção científica da Universidade Federal dos Vales do Jequitinhonha e Mucuri.
+                Todos os seus conteúdos estão disponíveis publicamente, e
+                por estarem amplamente acessíveis proporcionam maior visibilidade e impacto da produção
+                científica da instituição. Sua missão é armazenar, preservar, divulgar e dar acesso
+                à produção científica da Universidade Federal dos Vales do Jequitinhonha e Mucuri em formato digital.
+                Pretende reunir, em um único local, o conjunto das publicações da UFVJM.
+            </p>
+
+            <p style="text-align: justify;"> Para disponibilizar sua produção científica no
+                Repositório, os professores, pesquisadores e alunos de mestrado e doutorado da
+                UFVJM deverão entrar em contato com a Biblioteca Central, através do e-mail: repositorio@ufvjm.edu.br, ou pelo telefone: (38) 3532-1208.</p>
+        </div>
+
         <div class="container">
 
             <div id="portfolio">
@@ -175,7 +191,7 @@
 
                 <%@ include file="discovery/static-sidebar-facet.jsp" %>
             </div>
-            
+
         </div>
     </div>
 </dspace:layout>
