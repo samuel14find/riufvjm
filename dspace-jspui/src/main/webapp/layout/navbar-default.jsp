@@ -129,6 +129,10 @@
                         <li><a target="_blank" href="<%= request.getContextPath() %>/doc2.docx">Documento2</a></li>
                     </ul>
                 </li>
+
+                    <li><a class="pequeno" href="javascript:setBaseFontSizeMinus()" title="Texto pequeno">A -</a></li>
+                    <li><a class="medio" href="javascript:setBaseFontSize(14)" title="Texto normal">A</a></li>
+                    <li><a class="grande" href="javascript:setBaseFontSizePlus()" title="Texto grande">A +</a></li>
             </ul>
 
                 <% if (supportedLocales != null && supportedLocales.length > 1)
@@ -163,6 +167,24 @@
 
             <div class="nav navbar-nav navbar-right">
                 <ul class="nav navbar-nav navbar-right">
+                    <li>
+                    <div style="padding-top: 12px;padding-left: 30px">
+                    <a onclick="javascript:document.repost.locale.value='pt_BR';document.repost.submit();"
+                    href="<%= request.getContextPath() %>?locale=pt_BR">
+                    <img src="<%= request.getContextPath() %>/image/br.png" height="25">
+                    </a>
+
+                    <a onclick="javascript:document.repost.locale.value='en';document.repost.submit();"
+                    href="<%= request.getContextPath() %>?locale=en">
+                    <img src="<%= request.getContextPath() %>/image/us.png" height="25">
+                    </a>
+
+                    <a onclick="javascript:document.repost.locale.value='es';document.repost.submit();"
+                    href="<%= request.getContextPath() %>?locale=es">
+                    <img src="<%= request.getContextPath() %>/image/es.png" height="25">
+                    </a>
+                    </div>
+            </li>
                     <li class="dropdown">
                             <%
                                 if (user != null)
@@ -208,13 +230,6 @@
                             </ul>
                   </li>
                 </ul>
-                <ul class="nav navbar-nav navbar-right">
-                    <li><a class="pequeno" href="javascript:setBaseFontSizeMinus()" title="Texto pequeno">A -</a></li>
-                    <li><a class="medio" href="javascript:setBaseFontSize(14)" title="Texto normal">A</a></li>
-                    <li><a class="grande" href="javascript:setBaseFontSizePlus()" title="Texto grande">A +</a></li>
-                </ul>
-
-
                     <%-- Search Box --%>
 
                     <%-- <form method="get" action="<%= request.getContextPath() %>/simple-search" class="navbar-form navbar-right">
