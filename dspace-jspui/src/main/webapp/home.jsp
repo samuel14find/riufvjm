@@ -70,28 +70,12 @@
 <dspace:layout locbar="nolink" titlekey="jsp.home.title" feedData="<%= feedData %>">
 
     <div class="container">
-        <div class="pull-right" style="margin-top: 50px;">
-                <%-- Escolhe idioma--%>
-            <a onclick="javascript:document.repost.locale.value='pt_BR';document.repost.submit();"
-               href="<%= request.getContextPath() %>?locale=pt_BR">
-                <img src="<%= request.getContextPath() %>/image/br.png" height="25">
-            </a>
-            <a onclick="javascript:document.repost.locale.value='en';document.repost.submit();"
-               href="<%= request.getContextPath() %>?locale=en">
-                <img src="<%= request.getContextPath() %>/image/us.png" height="25">
-            </a>
-            <a onclick="javascript:document.repost.locale.value='es';document.repost.submit();"
-               href="<%= request.getContextPath() %>?locale=es">
-                <img src="<%= request.getContextPath() %>/image/es.png" height="25">
-            </a>
-        </div>
-
         <form method="get" action="<%= request.getContextPath() %>/simple-search"
               class="form-horizontal col-md-12 form-group form-group-lg" scope="search" role="form">
 
             <div id="logo-deposita" class="text-center">
                 <a id="link-logo-deposita" href="<%= request.getContextPath() %>/community-list">
-                    <img width="600" height="160" src="<%= request.getContextPath() %>/image/TesteLogo-1395-2.png"
+                    <img width="500" height="100" src="<%= request.getContextPath() %>/image/TesteLogo-1395-2.png"
                          usemap="#mapa-brasil">
                 </a>
             </div>
