@@ -35,6 +35,10 @@
 <%@ page import="org.dspace.core.Utils" %>
 <%@ page import="javax.servlet.jsp.jstl.core.Config" %>
 <%@ page import="java.util.Locale" %>
+<%@ page import="org.dspace.services.ConfigurationService" %>
+<%@ page import="org.dspace.content.packager.PackageParameters" %>
+<%@ page import="org.dspace.core.ConfigurationManager" %>
+
 
 <%
     Community[] communities = (Community[]) request.getAttribute("communities");
@@ -66,12 +70,29 @@
 <dspace:layout locbar="nolink" titlekey="jsp.home.title" feedData="<%= feedData %>">
 
     <div class="container">
+        <div class="pull-right" style="margin-top: 50px;">
+                <%-- Escolhe idioma--%>
+            <a onclick="javascript:document.repost.locale.value='pt_BR';document.repost.submit();"
+               href="<%= request.getContextPath() %>?locale=pt_BR">
+                <img src="<%= request.getContextPath() %>/image/br.png" height="25">
+            </a>
+            <a onclick="javascript:document.repost.locale.value='en';document.repost.submit();"
+               href="<%= request.getContextPath() %>?locale=en">
+                <img src="<%= request.getContextPath() %>/image/us.png" height="25">
+            </a>
+            <a onclick="javascript:document.repost.locale.value='es';document.repost.submit();"
+               href="<%= request.getContextPath() %>?locale=es">
+                <img src="<%= request.getContextPath() %>/image/es.png" height="25">
+            </a>
+        </div>
+
         <form method="get" action="<%= request.getContextPath() %>/simple-search"
               class="form-horizontal col-md-12 form-group form-group-lg" scope="search" role="form">
 
             <div id="logo-deposita" class="text-center">
                 <a id="link-logo-deposita" href="<%= request.getContextPath() %>/community-list">
-                    <img src="<%= request.getContextPath() %>/image/logo.gif" usemap="#mapa-brasil">
+                    <img width="632" height="212" src="<%= request.getContextPath() %>/image/LogoRepositorio.gif"
+                         usemap="#mapa-brasil">
                 </a>
             </div>
 
@@ -91,13 +112,86 @@
 
         </form>
 
+        <div class="form form-horizontal col-md-12 form-group form-group-lg">
+            <p style="text-align: justify;">
+                É um conjunto de serviços oferecidos pela Biblioteca Central para a gestão e
+                disseminação da produção científica da Universidade Federal dos Vales do Jequitinhonha e Mucuri.
+                Todos os seus conteúdos estão disponíveis publicamente, e
+                por estarem amplamente acessíveis proporcionam maior visibilidade e impacto da produção
+                científica da instituição. Sua missão é armazenar, preservar, divulgar e dar acesso
+                à produção científica da Universidade Federal dos Vales do Jequitinhonha e Mucuri em formato digital.
+                Pretende reunir, em um único local, o conjunto das publicações da UFVJM.
+            </p>
 
-        <div class="container row">
+            <p style="text-align: justify;"> Para disponibilizar sua produção científica no
+                Repositório, os professores, pesquisadores e alunos de mestrado e doutorado da
+                UFVJM deverão entrar em contato com a Biblioteca Central, através do e-mail: repositorio@ufvjm.edu.br, ou pelo telefone: (38) 3532-1208.</p>
+        </div>
 
-            <% request.setAttribute("createRootDiv", false); %>
+        <div class="container">
+
+            <div id="portfolio">
+                <h1 title="<fmt:message key="jsp.home.com1"/>">
+                    <span class="glyphicon glyphicon-book"></span> <fmt:message key="jsp.home.com1"/>
+                </h1>
+                <div class="row">
+                    <%
+                        if(communities != null && communities.length != 0){
+                    %>
+                        <%
+                            boolean showLogos = ConfigurationManager.getBooleanProperty("jspui.home-page.logos", true);
+                            for (Community com : communities) {
+                        %>
+                            <div class="col-sm-2 portfolio-item">
+
+                                <%
+                                    Bitstream logo = com.getLogo();
+                                    if (showLogos && logo != null) {
+                                %>
+                                    <a class="portfolio-link" href="<%= request.getContextPath() %>/handle/<%= com.getHandle() %>">
+                                    <div class="portfolio-hover" style="min-height:50px;">
+                                        <div class="portfolio-hover-content" title="<%= com.getName() %>" alt="<%= com.getName() %>">
+
+                                        </div>
+                                    </div>
+
+                                    <img alt="Logo" class="img-responsive" src="<%= request.getContextPath() %>/retrieve/<%= logo.getID() %>" />
+                                     </a>
+                                <div class="portfolio-caption">
+                                    <h3 class="list-group-item-heading" title="<%= com.getName() %>">
+                                        <a href="<%= request.getContextPath() %>/handle/<%= com.getHandle() %>"><%= com.getName() %></a>
+                                        <%
+                                            if (ConfigurationManager.getBooleanProperty("webui.strengths.show")) {
+                                        %>
+                                        <span class="badge pull-right" style="color:#000000 "><%= ic.getCount(com) %></span>
+                                        <%
+                                            }
+                                        %>
+                                    </h3>
+                                    <p></p>
+                                </div>
+                                <%
+                                    }
+                                %>
+                            </div>
+                        <%
+                            }
+                        %>
+
+                    <%
+                        }
+                    %>
+                </div>
+            </div>
+
+            <div class="container row">
+
+                <% request.setAttribute("createRootDiv", false); %>
 
 
-            <%@ include file="discovery/static-sidebar-facet.jsp" %>
+                <%@ include file="discovery/static-sidebar-facet.jsp" %>
+            </div>
+
         </div>
     </div>
 </dspace:layout>
