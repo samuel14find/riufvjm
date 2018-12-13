@@ -138,6 +138,7 @@
         <name-map collection-handle="1/1583" form-name="dissertacao_tese "/>
         <name-map collection-handle="1/970" form-name="dissertacao_tese "/>
         <name-map collection-handle="1/993" form-name="dissertacao_tese "/>
+        <name-map collection-handle="1/1856" form-name="dissertacao_tese "/>
         <name-map collection-handle="1/1557" form-name="anais"/>
         -->
         <!-- Para Teste -->
@@ -1656,71 +1657,37 @@
         <value-pairs value-pairs-name="common_types" dc-term="type">
             <pair>
                 <displayed-value>Animação</displayed-value>
-                <stored-value>Animation</stored-value>
+                <stored-value>Animação</stored-value>
             </pair>
             <pair>
                 <displayed-value>Artigo</displayed-value>
-                <stored-value>Article</stored-value>
+                <stored-value>Artigo</stored-value>
             </pair>
             <pair>
                 <displayed-value>Livro</displayed-value>
-                <stored-value>Book</stored-value>
+                <stored-value>Livro</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Folheto</displayed-value>
+                <stored-value>Folheto</stored-value>
             </pair>
             <pair>
                 <displayed-value>Capítulo de livro</displayed-value>
-                <stored-value>Book chapter</stored-value>
+                <stored-value>Capítulo de Livro</stored-value>
             </pair>
-            <pair>
-                <displayed-value>Dataset</displayed-value>
-                <stored-value>Dataset</stored-value>
-            </pair>
-            <pair>
-                <displayed-value>Learning Object</displayed-value>
-                <stored-value>Learning Object</stored-value>
-            </pair>
+
             <pair>
                 <displayed-value>Imagem</displayed-value>
-                <stored-value>Image</stored-value>
+                <stored-value>Imagem</stored-value>
             </pair>
-            <pair>
-                <displayed-value>Imagem, 3-D</displayed-value>
-                <stored-value>Image, 3-D</stored-value>
-            </pair>
-            <pair>
-                <displayed-value>Map</displayed-value>
-                <stored-value>Map</stored-value>
-            </pair>
-            <pair>
-                <displayed-value>Musical Score</displayed-value>
-                <stored-value>Musical Score</stored-value>
-            </pair>
-            <pair>
-                <displayed-value>Plan or blueprint</displayed-value>
-                <stored-value>Plan or blueprint</stored-value>
-            </pair>
-            <pair>
-                <displayed-value>Preprint</displayed-value>
-                <stored-value>Preprint</stored-value>
-            </pair>
+
             <pair>
                 <displayed-value>Trabalho apresentado em evento</displayed-value>
-                <stored-value>conferenceObject</stored-value>
+                <stored-value>Trabalho apresentado em evento</stored-value>
             </pair>
             <pair>
                 <displayed-value>Anais de Evento</displayed-value>
                 <stored-value>Anais de Evento</stored-value>
-            </pair>
-            <pair>
-                <displayed-value>Recording, acoustical</displayed-value>
-                <stored-value>Recording, acoustical</stored-value>
-            </pair>
-            <pair>
-                <displayed-value>Recording, musical</displayed-value>
-                <stored-value>Recording, musical</stored-value>
-            </pair>
-            <pair>
-                <displayed-value>Recording, oral</displayed-value>
-                <stored-value>Recording, oral</stored-value>
             </pair>
             <pair>
                 <displayed-value>Software</displayed-value>
@@ -1728,34 +1695,30 @@
             </pair>
             <pair>
                 <displayed-value>Relatório Técnico</displayed-value>
-                <stored-value>Technical Report</stored-value>
+                <stored-value>Relatório Técnico</stored-value>
             </pair>
             <pair>
                 <displayed-value>Dissertação</displayed-value>
-                <stored-value>masterThesis</stored-value>
+                <stored-value>Dissertação</stored-value>
             </pair>
             <pair>
-                <displayed-value>Teses</displayed-value>
-                <stored-value>doctoralThesis</stored-value>
+                <displayed-value>Tese</displayed-value>
+                <stored-value>Tesse</stored-value>
             </pair>
             <pair>
                 <displayed-value>Video</displayed-value>
                 <stored-value>Video</stored-value>
             </pair>
             <pair>
-                <displayed-value>Working Paper</displayed-value>
-                <stored-value>Working Paper</stored-value>
+                <displayed-value>Relatorio de pesquisa</displayed-value>
+                <stored-value>Relatório de pesquisa</stored-value>
             </pair>
             <pair>
-                <displayed-value>Relatorios de pesquisa</displayed-value>
-                <stored-value>report</stored-value>
+                <displayed-value>Outros</displayed-value>
+                <stored-value>Outros</stored-value>
             </pair>
             <pair>
-                <displayed-value>Other</displayed-value>
-                <stored-value>Other</stored-value>
-            </pair>
-            <pair>
-                <displayed-value>Patentes</displayed-value>
+                <displayed-value>Patente</displayed-value>
                 <stored-value>patente</stored-value>
             </pair>
         </value-pairs>
@@ -1809,31 +1772,31 @@
 
         <value-pairs value-pairs-name="licence_types" dc-term="rights">
             <pair>
-                <displayed-value>openAcces</displayed-value>
-                <stored-value>openAcces</stored-value>
+                <displayed-value>Acesso Aberto</displayed-value>
+                <stored-value>Acesso Aberto</stored-value>
             </pair>
             <pair>
-                <displayed-value>restrictedAccess</displayed-value>
-                <stored-value>restrictedAcces</stored-value>
+                <displayed-value>Acesso Restrito</displayed-value>
+                <stored-value>Acesso Restrito</stored-value>
             </pair>
             <pair>
-                <displayed-value>embargoedAccess</displayed-value>
-                <stored-value>embargoedAccess</stored-value>
+                <displayed-value>Acesso Embargado</displayed-value>
+                <stored-value>Acesso Embargado</stored-value>
             </pair>
             <pair>
-                <displayed-value>closedAccess</displayed-value>
-                <stored-value>closedAcces</stored-value>
+                <displayed-value>Acesso Fechado</displayed-value>
+                <stored-value>Acesso Fechado</stored-value>
             </pair>
         </value-pairs>
 
         <value-pairs value-pairs-name="tese_dissertacao" dc-term="type">
             <pair>
                 <displayed-value>Dissertação</displayed-value>
-                <stored-value>masterThesis</stored-value>
+                <stored-value>Dissertação</stored-value>
             </pair>
             <pair>
                 <displayed-value>Tese</displayed-value>
-                <stored-value>doctoralThesis</stored-value>
+                <stored-value>Tese</stored-value>
             </pair>
         </value-pairs>
 
