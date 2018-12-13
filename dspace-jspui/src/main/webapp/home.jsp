@@ -26,6 +26,8 @@
 <%@ taglib uri="http://www.dspace.org/dspace-tags.tld" prefix="dspace" %>
 
 <%@ page import="org.dspace.content.Bitstream" %>
+<%@ page import="java.io.File" %>
+
 <%@ page import="org.dspace.content.Community" %>
 <%@ page import="org.dspace.content.Item" %>
 <%@ page import="org.dspace.content.Metadatum" %>
@@ -38,6 +40,11 @@
 <%@ page import="org.dspace.services.ConfigurationService" %>
 <%@ page import="org.dspace.content.packager.PackageParameters" %>
 <%@ page import="org.dspace.core.ConfigurationManager" %>
+<%@ page import="javax.servlet.jsp.jstl.fmt.LocaleSupport" %>
+<%@ page import="java.util.Enumeration" %>
+<%@ page import="org.dspace.app.webui.util.UIUtil" %>
+<%@ page import="org.dspace.browse.ItemCounter" %>
+<%@ page import="org.dspace.core.service.NewsService" %>
 
 
 <%
@@ -46,8 +53,7 @@
     Locale sessionLocale = UIUtil.getSessionLocale(request);
     Config.set(request.getSession(), Config.FMT_LOCALE, sessionLocale);
 
-    /* String topNews = NewsManager.readNewsFile(LocaleSupport.getLocalizedMessage(pageContext, "news-top.html")); */
-    /* String sideNews = NewsManager.readNewsFile(LocaleSupport.getLocalizedMessage(pageContext, "news-side.html")); */
+     String topNews = NewsManager.readNewsFile(LocaleSupport.getLocalizedMessage(pageContext, "news-top.html"));
 
     boolean feedEnabled = ConfigurationManager.getBooleanProperty("webui.feed.enable");
     String feedData = "NONE";
@@ -58,12 +64,11 @@
     ItemCounter ic = new ItemCounter(UIUtil.obtainContext(request));
 
     RecentSubmissions submissions = (RecentSubmissions) request.getAttribute("recent.submissions");
+
 %>
-
-
 <%--
 	<div class="jumbotron">
-        <%= topNews %>
+
 	</div>
 --%>
 
@@ -96,21 +101,7 @@
 
         </form>
 
-        <div class="form form-horizontal col-md-12 form-group form-group-lg">
-            <p style="text-align: justify;">
-                É um conjunto de serviços oferecidos pela Biblioteca Central para a gestão e
-                disseminação da produção científica da Universidade Federal dos Vales do Jequitinhonha e Mucuri.
-                Todos os seus conteúdos estão disponíveis publicamente, e
-                por estarem amplamente acessíveis proporcionam maior visibilidade e impacto da produção
-                científica da instituição. Sua missão é armazenar, preservar, divulgar e dar acesso
-                à produção científica da Universidade Federal dos Vales do Jequitinhonha e Mucuri em formato digital.
-                Pretende reunir, em um único local, o conjunto das publicações da UFVJM.
-            </p>
-
-            <p style="text-align: justify;"> Para disponibilizar sua produção científica no
-                Repositório, os professores, pesquisadores e alunos de mestrado e doutorado da
-                UFVJM deverão entrar em contato com a Biblioteca Central, através do e-mail: repositorio@ufvjm.edu.br, ou pelo telefone: (38) 3532-1208.</p>
-        </div>
+        <%= topNews %>
 
         <div class="container">
 
