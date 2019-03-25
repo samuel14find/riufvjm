@@ -5,23 +5,6 @@
    <artifactId>dspace-parent</artifactId>
    <packaging>pom</packaging>
    <version>5.7-SNAPSHOT</version>
-    <dependencies>
-        <dependency>
-            <groupId>org.dspace</groupId>
-            <artifactId>dspace-api</artifactId>
-            <version>5.2</version>
-        </dependency>
-        <dependency>
-            <groupId>org.dspace</groupId>
-            <artifactId>dspace-parent</artifactId>
-            <version>5.7-SNAPSHOT</version>
-        </dependency>
-        <dependency>
-            <groupId>org.dspace</groupId>
-            <artifactId>dspace-api</artifactId>
-            <version>5.2</version>
-        </dependency>
-    </dependencies>
     <name>DSpace Parent Project</name>
    <description>
    	DSpace open source software is a turnkey institutional repository application.
