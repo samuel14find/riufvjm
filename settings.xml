@@ -1,0 +1,68 @@
+<settings xmlns="http://maven.apache.org/SETTINGS/1.0.0"
+          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xsi:schemaLocation="http://maven.apache.org/SETTINGS/1.0.0
+                      http://maven.apache.org/xsd/settings-1.0.0.xsd">
+    <profiles>
+        <profile>
+            <id>configuracao-common</id>
+            <properties>
+                <!-- fixed defaults -->
+                <dspace.port>8080</dspace.port>
+                <dspace.hostname>localhost</dspace.hostname>
+                <db.name>repositorio</db.name>
+                <db.driver>org.postgresql.Driver</db.driver>
+                <db.username>dspace</db.username>
+                <db.password>dspace</db.password>
+                <mail.server>sugarsharp.local</mail.server>
+                <mail.server.disabled>false</mail.server.disabled>
+                <mail.from.address></mail.from.address>
+                <mail.admin>samuel.bicalho@ufvjm.edu.br</mail.admin>
+                <feedback.recipient></feedback.recipient>
+                <alert.recipient></alert.recipient>
+                <registration.notify></registration.notify>
+                <authentication.method>org.dspace.authenticate.PasswordAuthentication</authentication.method>
+                <authenticate.AuthenticationMethod>org.dspace.authenticate.PasswordAuthentication
+                </authenticate.AuthenticationMethod>
+                <org.dspace.authenticate.AuthenticationMethod>org.dspace.authenticate.PasswordAuthentication
+                </org.dspace.authenticate.AuthenticationMethod>
+                <assetstore.incoming>0</assetstore.incoming>
+                <handle.prefix>1</handle.prefix>
+                <handle.ip></handle.ip>
+
+                <!-- defaults depending on other properties (eg dspace.shortname) -->
+                <dspace.dir>C:/Users/samue/IdeaProjects/riufjm</dspace.dir>
+                <dspace.install.dir>E:/repositorio/${dspace.shortname}</dspace.install.dir>
+                <dspace.baseUrl>http://localhost:${dspace.port}</dspace.baseUrl>
+                <dspace.url>http://localhost:${dspace.port}/${dspace.shortname}</dspace.url>
+                <db.url>jdbc:postgresql://localhost:5432/${dspace.shortname}</db.url>
+                <dspace.name>${dspace.shortname} Teste</dspace.name>
+                <dspace.oai.url>http://localhost:${dspace.port}/oai-${dspace.shortname}</dspace.oai.url>
+                <solr.server>http://localhost:${dspace.port}/solr</solr.server>
+                <solr.log.server>http://localhost:${dspace.port}/solr/statistics</solr.log.server>
+                <solr.search.server>http://localhost:${dspace.port}/solr/search</solr.search.server>
+                <assetstore.dir>${dspace.dir}/assetstore</assetstore.dir>
+                <log.dir>${dspace.dir}/log</log.dir>
+                <search.dir>${dspace.dir}/search</search.dir>
+                <upload.temp.dir>${dspace.dir}/upload</upload.temp.dir>
+                <report.dir>${dspace.dir}/reports/</report.dir>
+
+                <!-- default. properties, same values as those without the default. prefix -->
+                <default.db.name>${db.name}</default.db.name>
+                <default.db.driver>${db.driver}</default.db.driver>
+                <default.db.username>${db.username}</default.db.username>
+                <default.db.password>${db.password}</default.db.password>
+                <default.db.url>${db.url}</default.db.url>
+                <default.solr.server>${solr.server}</default.solr.server>
+                <default.dspace.dir>${dspace.dir}</default.dspace.dir>
+                <default.mail.server>${mail.server}</default.mail.server>
+                <default.solr.server>${solr.server}</default.solr.server>
+            </properties>
+        </profile>
+        <profile>
+            <id>configuracao-repositorio</id>
+            <properties>
+                <dspace.shortname>repositorio</dspace.shortname>
+            </properties>
+        </profile>
+    </profiles>
+</settings>
