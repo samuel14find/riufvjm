@@ -169,6 +169,7 @@
                 <ul class="nav navbar-nav navbar-right">
                     <li>
                     <div style="padding-top: 12px;padding-left: 30px">
+                    <%-- Escolher idioma ícone--%>
                     <a onclick="javascript:document.repost.locale.value='pt_BR';document.repost.submit();"
                     href="<%= request.getContextPath() %>?locale=pt_BR">
                     <img src="<%= request.getContextPath() %>/image/br.png" height="25">

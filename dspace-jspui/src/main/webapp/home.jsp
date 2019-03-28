@@ -101,6 +101,7 @@
 
         </form>
 
+        <%-- Notícias editáveis pelo front--%>
         <%= topNews %>
 
         <div class="container">
