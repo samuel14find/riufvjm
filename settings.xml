@@ -30,7 +30,7 @@
                 <handle.ip></handle.ip>
 
                 <!-- defaults depending on other properties (eg dspace.shortname) -->
-                <dspace.dir>C:/Users/samue/IdeaProjects/riufjm</dspace.dir>
+                <dspace.dir>E:/repositorio/${dspace.shortname}</dspace.dir>
                 <dspace.install.dir>E:/repositorio/${dspace.shortname}</dspace.install.dir>
                 <dspace.baseUrl>http://localhost:${dspace.port}</dspace.baseUrl>
                 <dspace.url>http://localhost:${dspace.port}/${dspace.shortname}</dspace.url>
