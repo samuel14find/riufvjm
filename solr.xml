@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Context crossContext="true" override="true">
+<Parameter name="dspace config" value="" override="false"/>
+<Environment name="solr/home" type="java.lang.String" value="caminho para webapps/solr" override="false"/>
+    <WatchedResource>WEB-INF\web.xml</WatchedResource>
+</Context>
